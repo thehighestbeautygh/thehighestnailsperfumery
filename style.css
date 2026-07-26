@@ -757,3 +757,83 @@ font-style:italic;
 color:#666;
 
 }
+/* FINAL HERO OVERRIDE */
+
+.hero-content h1{
+
+font-family:"Playfair Display", serif !important;
+
+font-size:38px !important;
+
+font-weight:600 !important;
+
+color:#111 !important;
+
+line-height:1.2;
+
+}
+
+
+.hero-content h2{
+
+font-family:"Cormorant Garamond", serif !important;
+
+font-size:28px !important;
+
+font-weight:500 !important;
+
+color:#444 !important;
+
+}
+
+
+.hero-content p{
+
+font-family:Arial, sans-serif !important;
+
+font-size:16px !important;
+
+color:#222 !important;
+
+line-height:1.7;
+
+}
+
+
+.quote-box p{
+
+font-family:"Cormorant Garamond", serif !important;
+
+font-size:25px !important;
+
+font-style:italic;
+
+color:#666 !important;
+
+}
+
+
+.hero-slider{
+
+width:380px;
+
+height:450px;
+
+overflow:hidden;
+
+border-radius:25px;
+
+}
+
+
+.slide img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+border-radius:25px;
+
+}
