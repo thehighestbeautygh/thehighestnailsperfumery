@@ -1223,5 +1223,13 @@ line-height:1.5;
 font-size:45px;
 
 }
+/* NAVBAR TRANSPARENT ONLY */
+
+.navbar,
+nav,
+header {
+    background: transparent !important;
+    box-shadow: none !important;
+}
 
 
