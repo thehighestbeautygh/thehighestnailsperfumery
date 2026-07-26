@@ -837,3 +837,11 @@ object-fit:cover;
 border-radius:25px;
 
 }
+.menu-btn,
+.search-btn{
+
+background:#444 !important;
+
+color:white !important;
+
+}
