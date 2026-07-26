@@ -80,3 +80,35 @@ sideMenu.classList.remove("active");
 overlay.classList.remove("active");
 
 });
+// HERO IMAGE SLIDER
+
+const slides = document.querySelectorAll(".slide");
+
+let slideIndex = 0;
+
+
+function changeSlide(){
+
+slides.forEach((slide)=>{
+
+slide.classList.remove("active");
+
+});
+
+
+slideIndex++;
+
+
+if(slideIndex >= slides.length){
+
+slideIndex = 0;
+
+}
+
+
+slides[slideIndex].classList.add("active");
+
+}
+
+
+setInterval(changeSlide, 4000);
