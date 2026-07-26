@@ -1335,5 +1335,86 @@ white-space:nowrap !important;
 background:#222 !important;
 
 }
+/* ===========================
+THE HIGHEST EXPERIENCE
+=========================== */
+
+.experience-section{
+    padding:80px 8%;
+    background:#fff;
+    text-align:center;
+}
+
+.experience-heading h2{
+    font-family:"Playfair Display",serif;
+    font-size:38px;
+    color:#111;
+    margin-bottom:12px;
+}
+
+.experience-heading p{
+    font-family:"Cormorant Garamond",serif;
+    font-size:20px;
+    color:#555;
+    max-width:650px;
+    margin:0 auto 50px;
+    line-height:1.6;
+}
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,280px));
+    justify-content:center;
+    gap:30px;
+}
+
+.experience-card{
+    background:#fff;
+    border-radius:20px;
+    padding:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s ease;
+}
+
+.experience-card:hover{
+    transform:translateY(-6px);
+}
+
+.experience-card img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 18px;
+    border-radius:18px;
+    border:4px solid #fff;
+    box-shadow:0 8px 18px rgba(0,0,0,.10);
+}
+
+.experience-card h3{
+    font-family:"Playfair Display",serif;
+    font-size:26px;
+    color:#111;
+    margin-bottom:12px;
+}
+
+.experience-card p{
+    font-family:"Cormorant Garamond",serif;
+    font-size:18px;
+    color:#444;
+    line-height:1.7;
+}
+
+.nails-card{
+    border:2px solid #4A90E2;
+}
+
+.lashes-card{
+    border:2px solid #F39AC7;
+}
+
+.perfume-card{
+    border:2px solid #333;
+}
 
 
