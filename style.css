@@ -1231,5 +1231,52 @@ header {
     background: transparent !important;
     box-shadow: none !important;
 }
+/* HERO MESSAGE FINAL STYLE ONLY */
+
+.hero-content h1 {
+
+font-family: "Playfair Display", serif !important;
+
+font-size: 48px !important;
+
+font-weight: 700 !important;
+
+line-height: 1.15 !important;
+
+color: #111 !important;
+
+}
+
+
+.hero-content h2 {
+
+font-family: "Playfair Display", serif !important;
+
+font-size: 24px !important;
+
+font-weight: 600 !important;
+
+color: #444 !important;
+
+margin-top: 15px !important;
+
+}
+
+
+.hero-content p {
+
+font-family: "Cormorant Garamond", serif !important;
+
+font-size: 22px !important;
+
+font-weight: 500 !important;
+
+line-height: 1.6 !important;
+
+letter-spacing: 0.2px !important;
+
+color: #333 !important;
+
+}
 
 
