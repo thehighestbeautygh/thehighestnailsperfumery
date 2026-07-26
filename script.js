@@ -3,6 +3,9 @@
 // JavaScript
 // ==========================
 
+
+// QUOTES
+
 const quotes = [
 
 "Luxury is remembered long after the service is complete.",
@@ -19,9 +22,9 @@ let currentQuote = 0;
 
 const quoteElement = document.getElementById("quoteText");
 
-if (quoteElement){
+if(quoteElement){
 
-quoteElement.textContent = quotes[currentQuote];
+quoteElement.textContent=quotes[currentQuote];
 
 setInterval(()=>{
 
@@ -38,3 +41,42 @@ quoteElement.textContent=quotes[currentQuote];
 },5000);
 
 }
+
+
+
+// MENU
+
+const menuButton=document.getElementById("menuButton");
+
+const sideMenu=document.getElementById("sideMenu");
+
+const closeMenu=document.getElementById("closeMenu");
+
+const overlay=document.getElementById("overlay");
+
+
+menuButton.addEventListener("click",()=>{
+
+sideMenu.classList.add("active");
+
+overlay.classList.add("active");
+
+});
+
+
+closeMenu.addEventListener("click",()=>{
+
+sideMenu.classList.remove("active");
+
+overlay.classList.remove("active");
+
+});
+
+
+overlay.addEventListener("click",()=>{
+
+sideMenu.classList.remove("active");
+
+overlay.classList.remove("active");
+
+});
