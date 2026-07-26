@@ -1138,4 +1138,57 @@ color:#999;
 font-family:"Playfair Display", serif;
 
 }
+/* FINAL HERO OVERRIDE */
+
+.hero-buttons .primary-btn,
+.hero-buttons .secondary-btn {
+
+background:#444 !important;
+
+color:white !important;
+
+text-decoration:none !important;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:14px 30px;
+
+border-radius:40px;
+
+font-family:"Arial", sans-serif;
+
+font-size:15px;
+
+font-weight:600;
+
+}
+
+
+.quote-box p {
+
+font-family:"Cormorant Garamond", serif !important;
+
+font-size:28px !important;
+
+font-style:italic !important;
+
+color:#777 !important;
+
+}
+
+
+.quote-mark {
+
+font-family:"Playfair Display", serif !important;
+
+font-size:42px !important;
+
+color:#999 !important;
+
+}
+
 
