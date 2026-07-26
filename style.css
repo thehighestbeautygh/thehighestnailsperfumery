@@ -872,7 +872,7 @@ max-width:520px;
 
 .logo{
 
-    width:55px;
+    width:62px;
 
     height:auto;
 
@@ -887,5 +887,53 @@ max-width:520px;
 .logo:hover{
 
     transform:scale(1.04);
+
+}
+/* Final Navbar Icons */
+
+.search-btn,
+.menu-btn{
+
+width:46px;
+
+height:46px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#444;
+
+border:none;
+
+border-radius:50%;
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s ease;
+
+}
+
+
+.search-btn:hover,
+.menu-btn:hover{
+
+background:#222;
+
+transform:translateY(-2px);
+
+}
+
+
+.search-btn svg,
+.menu-btn svg{
+
+width:20px;
+
+height:20px;
 
 }
