@@ -1223,5 +1223,90 @@ line-height:1.5;
 font-size:45px;
 
 }
+/* =========================
+FINAL HERO FORCE FIX
+========================= */
 
+
+.hero {
+
+display:flex !important;
+
+flex-direction:row !important;
+
+align-items:center !important;
+
+justify-content:space-between !important;
+
+gap:60px !important;
+
+padding:90px 8% !important;
+
+background:white !important;
+
+}
+
+
+.hero-content {
+
+flex:1 !important;
+
+max-width:560px !important;
+
+}
+
+
+.hero-slider {
+
+flex:1 !important;
+
+max-width:500px !important;
+
+}
+
+
+.quote-box {
+
+margin-top:35px !important;
+
+padding:0 !important;
+
+background:transparent !important;
+
+border-left:4px solid #444 !important;
+
+padding-left:20px !important;
+
+position:relative !important;
+
+}
+
+
+.hero-quote {
+
+font-family:"Cormorant Garamond", serif !important;
+
+font-size:28px !important;
+
+font-style:italic !important;
+
+font-weight:600 !important;
+
+color:#444 !important;
+
+margin:0 !important;
+
+}
+
+
+/* NAVBAR FORCE */
+
+nav,
+.navbar {
+
+background:transparent !important;
+
+box-shadow:none !important;
+
+}
 
