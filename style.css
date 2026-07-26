@@ -1190,5 +1190,38 @@ font-size:42px !important;
 color:#999 !important;
 
 }
+/* FINAL QUOTE FORCE FIX */
+
+.quote-box {
+
+margin-top:40px;
+
+padding:20px;
+
+}
+
+
+.hero-quote {
+
+font-family:"Cormorant Garamond", serif !important;
+
+font-size:30px !important;
+
+font-style:italic !important;
+
+font-weight:600 !important;
+
+color:#444 !important;
+
+line-height:1.5;
+
+}
+
+
+.hero-quote::first-letter {
+
+font-size:45px;
+
+}
 
 
