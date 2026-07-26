@@ -1278,5 +1278,62 @@ letter-spacing: 0.2px !important;
 color: #333 !important;
 
 }
+/* HERO BUTTONS FINAL FIX ONLY */
+
+.hero-buttons {
+
+display:flex !important;
+
+flex-direction:row !important;
+
+align-items:center !important;
+
+gap:20px !important;
+
+flex-wrap:wrap !important;
+
+}
+
+
+.hero-buttons .primary-btn,
+.hero-buttons .secondary-btn {
+
+display:inline-flex !important;
+
+align-items:center !important;
+
+justify-content:center !important;
+
+width:auto !important;
+
+min-width:160px !important;
+
+height:50px !important;
+
+padding:0 28px !important;
+
+background:#444 !important;
+
+color:white !important;
+
+text-decoration:none !important;
+
+border-radius:30px !important;
+
+font-size:15px !important;
+
+font-weight:600 !important;
+
+white-space:nowrap !important;
+
+}
+
+
+.hero-buttons .primary-btn:hover,
+.hero-buttons .secondary-btn:hover {
+
+background:#222 !important;
+
+}
 
 
