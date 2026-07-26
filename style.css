@@ -671,3 +671,89 @@ font-size:14px;
 cursor:pointer;
 
 }
+/* DARK GREY BUTTON STYLE */
+
+.menu-btn,
+.search-btn{
+
+background:#444;
+
+color:white;
+
+}
+
+
+.menu-btn:hover,
+.search-btn:hover{
+
+background:#222;
+
+}
+/* HERO TYPOGRAPHY UPDATE */
+
+
+.hero-content h1{
+
+font-family:"Playfair Display", serif;
+
+font-size:42px;
+
+font-weight:600;
+
+color:#111;
+
+line-height:1.2;
+
+}
+
+
+.hero-content h2{
+
+font-family:"Cormorant Garamond", serif;
+
+font-size:30px;
+
+font-weight:500;
+
+color:#333;
+
+}
+
+
+.hero-content p{
+
+font-family:"Arial", sans-serif;
+
+font-size:17px;
+
+line-height:1.7;
+
+color:#333;
+
+max-width:500px;
+
+}
+
+
+.quote-box{
+
+margin-top:35px;
+
+padding:20px;
+
+border-left:4px solid #444;
+
+}
+
+
+.quote-box p{
+
+font-family:"Cormorant Garamond", serif;
+
+font-size:26px;
+
+font-style:italic;
+
+color:#666;
+
+}
