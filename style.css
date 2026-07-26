@@ -1416,5 +1416,86 @@ THE HIGHEST EXPERIENCE
 .perfume-card{
     border:2px solid #333;
 }
+/* ===========================
+FLOATING SOCIALS
+=========================== */
+
+.floating-socials{
+
+width:100%;
+
+overflow:hidden;
+
+padding:18px 0;
+
+background:#111;
+
+margin:70px 0;
+
+}
+
+.social-track{
+
+display:flex;
+
+align-items:center;
+
+gap:70px;
+
+width:max-content;
+
+animation:socialScroll 22s linear infinite;
+
+}
+
+.social-track span{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:19px;
+
+color:#fff;
+
+white-space:nowrap;
+
+}
+
+.social-track i{
+
+font-size:22px;
+
+color:#888;
+
+transition:.3s;
+
+}
+
+.social-track span:hover i{
+
+color:#fff;
+
+}
+
+@keyframes socialScroll{
+
+0%{
+
+transform:translateX(100%);
+
+}
+
+100%{
+
+transform:translateX(-100%);
+
+}
+
+}
 
 
