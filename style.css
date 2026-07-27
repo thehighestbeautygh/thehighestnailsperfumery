@@ -1938,6 +1938,13 @@ padding-right:8px;
 color:#111;
 
 }
+/* FORCE BRAND NAME SIZE */
+
+.brand-text h1{
+    font-size:22px !important;
+    line-height:1.2;
+    letter-spacing:2px;
+}
 
 
 
