@@ -2090,6 +2090,27 @@ background-position:300px;
 }
 
 }
+/* FORCE DIVIDER SPACING */
+
+.section-divider{
+
+margin:18px auto 18px !important;
+
+}
+
+.hero{
+
+padding-bottom:20px !important;
+
+}
+
+.experience{
+
+margin-top:0 !important;
+
+padding-top:25px !important;
+
+}
 
 
 
