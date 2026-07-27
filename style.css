@@ -1935,7 +1935,7 @@ line-height:.9;
 
 padding-right:8px;
 
-color:#111;
+color:#222;
 
 }
 /* FORCE BRAND NAME SIZE */
@@ -1945,7 +1945,43 @@ color:#111;
     line-height:1.2;
     letter-spacing:2px;
 }
+/* ===== HERO MESSAGE LUXURY BACKDROP ===== */
 
+.hero-message-box{
+.hero-message-box{
+
+background-image:
+linear-gradient(
+rgba(0,0,0,0.35),
+rgba(0,0,0,0.35)
+),
+url("images/IMG_2952.JPG");
+
+}
+
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+border:2px solid rgba(120,120,120,0.65);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,0.15);
+
+backdrop-filter:blur(8px);
+
+}
+/* HERO MESSAGE WHITE TEXT */
+
+.hero-message-box h2,
+.hero-message-box p{
+
+color:#ffffff;
+
+}
 
 
 
