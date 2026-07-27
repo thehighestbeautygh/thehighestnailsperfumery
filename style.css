@@ -2006,6 +2006,90 @@ color:#ffffff;
 .hero-message-box p{
     color:white !important;
 }
+/* ==================================
+   LUXURY SECTION DIVIDER
+================================== */
+
+.section-divider{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:18px;
+
+margin:45px auto 40px;
+
+width:100%;
+
+}
+
+.divider-line{
+
+width:90px;
+
+height:2px;
+
+border-radius:50px;
+
+background:linear-gradient(
+90deg,
+transparent,
+#bfc2c7,
+#ececec,
+#bfc2c7,
+transparent
+);
+
+background-size:300px 100%;
+
+animation:silverShimmer 3s linear infinite;
+
+}
+
+.divider-badge{
+
+padding:8px 18px;
+
+border:1.5px solid #c7c7c7;
+
+border-radius:999px;
+
+background:rgba(255,255,255,.75);
+
+backdrop-filter:blur(8px);
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:12px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:#666;
+
+box-shadow:0 4px 12px rgba(180,180,180,.18);
+
+}
+
+@keyframes silverShimmer{
+
+0%{
+
+background-position:-300px;
+
+}
+
+100%{
+
+background-position:300px;
+
+}
+
+}
 
 
 
