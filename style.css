@@ -2185,7 +2185,7 @@ margin-bottom:4px !important;
 
 position:fixed;
 
-top:50%;
+top:20px;
 
 right:0;
 
@@ -2195,7 +2195,7 @@ width:48%;
 
 max-width:300px;
 
-height:80vh;
+height:calc(100vh - 40px);
 
 padding:28px 24px;
 
@@ -2293,6 +2293,11 @@ transition:transform .35s ease;
 
 transform:translateX(0);
 
+}
+.side-menu{
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    -webkit-overflow-scrolling:touch;
 }
 
 
