@@ -1592,5 +1592,42 @@ line-height:1.6;
 color:#444;
 
 }
+/* HERO DOTS */
+
+.slider-dots{
+
+display:flex;
+
+justify-content:center;
+
+gap:12px;
+
+margin-top:22px;
+
+}
+
+.dot{
+
+width:11px;
+
+height:11px;
+
+background:#bbb;
+
+border-radius:50%;
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+.dot.active{
+
+background:#444;
+
+transform:scale(1.3);
+
+}
 
 
