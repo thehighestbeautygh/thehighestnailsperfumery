@@ -2154,6 +2154,29 @@ margin-bottom:4px !important;
     padding-bottom:0 !important;
 }
 /* final spacing adjustment */
+/* ===== FINAL FORCE HERO TO EXPERIENCE SPACING ===== */
 
+.hero-slider{
+    margin-bottom:0 !important;
+    padding-bottom:0 !important;
+}
+
+.hero-slider + .section-divider{
+    margin-top:5px !important;
+}
+
+.section-divider{
+    margin-top:5px !important;
+    margin-bottom:15px !important;
+}
+
+.experience-section{
+    margin-top:0 !important;
+    padding-top:0 !important;
+}
+
+.experience-heading{
+    margin-top:0 !important;
+}
 
 
