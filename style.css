@@ -2190,7 +2190,11 @@ top:0;
 
 right:0;
 
-height:100vh;
+height:85vh;
+
+top:25px;
+
+border-radius:20px 0 0 20px;
 
 width:48% !important;
 
@@ -2209,6 +2213,16 @@ padding:28px 24px !important;
 box-shadow:-10px 0 35px rgba(0,0,0,.25);
 
 z-index:9999;
+
+}
+overflow-y:auto;
+
+overscroll-behavior:contain;
+
+-webkit-overflow-scrolling:touch;
+body.menu-open{
+
+overflow:hidden;
 
 }
 
