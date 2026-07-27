@@ -2140,6 +2140,19 @@ margin:6px auto !important;
 margin-bottom:4px !important;
 
 }
+/* ===== REDUCE HERO DOTS SPACE ===== */
+
+.hero-slider{
+    padding-bottom:0 !important;
+    margin-bottom:0 !important;
+}
+
+.slider-dots,
+.hero-dots,
+.dots{
+    margin-bottom:5px !important;
+    padding-bottom:0 !important;
+}
 
 
 
