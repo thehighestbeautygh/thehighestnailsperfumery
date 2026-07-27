@@ -1497,5 +1497,100 @@ transform:translateX(-100%);
 }
 
 }
+/* ===========================
+CONTACT SECTION
+=========================== */
+
+.contact-section{
+
+padding:90px 8%;
+
+background:#fff;
+
+text-align:center;
+
+}
+
+.contact-container h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:38px;
+
+color:#111;
+
+margin-bottom:18px;
+
+}
+
+.contact-intro{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:20px;
+
+color:#555;
+
+max-width:650px;
+
+margin:0 auto 55px;
+
+line-height:1.7;
+
+}
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+.contact-card{
+
+background:#fff;
+
+padding:28px;
+
+border-radius:18px;
+
+box-shadow:0 8px 22px rgba(0,0,0,.08);
+
+transition:.3s ease;
+
+}
+
+.contact-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.contact-card h3{
+
+font-family:"Playfair Display",serif;
+
+font-size:24px;
+
+margin-bottom:12px;
+
+color:#111;
+
+}
+
+.contact-card p{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:18px;
+
+line-height:1.6;
+
+color:#444;
+
+}
 
 
