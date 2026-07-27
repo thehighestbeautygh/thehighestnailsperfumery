@@ -2181,41 +2181,46 @@ margin-bottom:4px !important;
 /* ===============================
    LUXURY SIDE MENU FORCE STYLE
 ================================ */
-
 .side-menu{
 
 position:fixed;
 
-top:0;
+top:50%;
 
 right:0;
 
-height:80vh;
-top:50%;
-transform:translateY(-50%);
-border-radius:20px 0 0 20px;
-overflow-y:auto;
--webkit-overflow-scrolling:touch;
+transform:translate(110%,-50%);
 
-width:48% !important;
+width:48%;
 
 max-width:300px;
 
-background:rgba(48,48,48,.68) !important;
+height:80vh;
 
-backdrop-filter:blur(22px);
+padding:28px 24px;
 
--webkit-backdrop-filter:blur(22px);
+background:rgba(48,48,48,.72);
+
+backdrop-filter:blur(20px);
+
+-webkit-backdrop-filter:blur(20px);
+
+border-radius:20px 0 0 20px;
 
 border-left:1px solid rgba(255,255,255,.15);
 
-padding:28px 24px !important;
+box-shadow:-12px 0 35px rgba(0,0,0,.28);
 
-box-shadow:-10px 0 35px rgba(0,0,0,.25);
+overflow-y:auto;
+
+transition:transform .35s ease;
 
 z-index:9999;
 
 }
+
+
+
 overflow-y:auto;
 
 overscroll-behavior:contain;
@@ -2243,7 +2248,7 @@ letter-spacing:.8px;
 
 text-decoration:none;
 
-padding:10px 0;
+padding:8px 0;
 
 margin:6px 0;
 
@@ -2270,6 +2275,23 @@ color:white !important;
 font-size:25px !important;
 
 border:none;
+
+}
+/* ===========================
+   SIDE MENU ANIMATION
+=========================== */
+
+.side-menu{
+
+transform:translateX(110%);
+
+transition:transform .35s ease;
+
+}
+
+.side-menu.active{
+
+transform:translateX(0);
 
 }
 
