@@ -2854,4 +2854,38 @@ margin-top:25px;
 font-size:14px;
 
 }
+/* BACK TO MENU BUTTON */
+
+.back-btn{
+
+display:inline-block;
+
+background:#5b7bbf;
+
+color:white !important;
+
+padding:12px 28px;
+
+border-radius:50px;
+
+font-family:"Inter",sans-serif;
+
+font-size:15px;
+
+text-decoration:none;
+
+margin-top:20px;
+
+transition:.3s ease;
+
+}
+
+
+.back-btn:hover{
+
+background:#405f9d;
+
+transform:translateY(-3px);
+
+}
 
