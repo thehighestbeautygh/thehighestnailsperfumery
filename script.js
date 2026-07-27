@@ -84,95 +84,33 @@ overlay.classList.remove("active");
 
 const slides = document.querySelectorAll(".slide");
 
-let slideIndex = 0;
-
-
-function changeSlide(){
-
-slides.forEach((slide)=>{
-
-slide.classList.remove("active");
-
-});
-
-
-slideIndex++;
-
-
-if(slideIndex >= slides.length){
-
-slideIndex = 0;
-
-}
-
-
-slides[slideIndex].classList.add("active");
-
-}
-
-
-setInterval(changeSlide, 4000);
-/* ===========================
-FINAL HOMEPAGE EFFECTS
-=========================== */
-
-// HERO IMAGE SLIDER
-
-const slides = document.querySelectorAll(".slide");
-
 const dots = document.querySelectorAll(".dot");
 
-let currentSlide = 0;
+let slideIndex = 0;
 
-function showSlide(index){
+function changeSlide(){
 
 slides.forEach(slide=>slide.classList.remove("active"));
 
 dots.forEach(dot=>dot.classList.remove("active"));
 
-slides[index].classList.add("active");
+slideIndex++;
 
-if(dots[index]){
+if(slideIndex>=slides.length){
 
-dots[index].classList.add("active");
+slideIndex=0;
+
+}
+
+slides[slideIndex].classList.add("active");
+
+if(dots[slideIndex]){
+
+dots[slideIndex].classList.add("active");
 
 }
 
 }
 
-function nextSlide(){
+setInterval(changeSlide,4000);
 
-currentSlide++;
-
-if(currentSlide>=slides.length){
-
-currentSlide=0;
-
-}
-
-showSlide(currentSlide);
-
-}
-
-setInterval(nextSlide,4500);
-
-
-// FLOATING EFFECT
-
-const floatingCards=document.querySelectorAll(".experience-card");
-
-floatingCards.forEach(card=>{
-
-card.addEventListener("mouseenter",()=>{
-
-card.style.transform="translateY(-10px)";
-
-});
-
-card.addEventListener("mouseleave",()=>{
-
-card.style.transform="translateY(0)";
-
-});
-
-});
