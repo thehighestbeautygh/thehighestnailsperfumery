@@ -1982,6 +1982,30 @@ backdrop-filter:blur(8px);
 color:#ffffff;
 
 }
+/* FORCE HERO MESSAGE GLASS IMAGE + WHITE TEXT */
+
+.hero-message-box{
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)
+    ),
+    url("images/IMG_2952.JPG") !important;
+
+    background-size:cover !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+
+    border:2px solid rgba(200,200,200,0.7) !important;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.25) !important;
+}
+
+
+.hero-message-box h2,
+.hero-message-box p{
+    color:white !important;
+}
 
 
 
