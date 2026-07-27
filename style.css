@@ -2578,4 +2578,199 @@ line-height:1.5;
 color:#222;
 
 }
+/* ==========================
+   NAILS PAGE FOUNDATION
+========================== */
+
+body{
+
+background:#ffffff;
+
+}
+
+
+.nails-hero{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:90px 8%;
+
+text-align:center;
+
+}
+
+
+.nails-hero-content{
+
+max-width:700px;
+
+}
+
+
+.page-tag{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:18px;
+
+letter-spacing:3px;
+
+color:#5b7bbf;
+
+}
+
+
+.nails-hero h1{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:55px;
+
+font-weight:600;
+
+color:#111;
+
+margin:20px 0;
+
+}
+
+
+.nails-hero p{
+
+font-family:"Inter",sans-serif;
+
+font-size:16px;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+
+
+/* SERVICES */
+
+.nails-services{
+
+padding:70px 8%;
+
+}
+
+
+.section-title{
+
+text-align:center;
+
+}
+
+
+.section-title h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:42px;
+
+}
+
+
+.service-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+.service-card img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+}
+
+
+.service-card{
+
+background:white;
+
+border:1px solid #ddd;
+
+padding:25px;
+
+text-align:center;
+
+border-radius:20px;
+
+}
+
+
+.service-card h3{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:28px;
+
+}
+
+
+.service-card p{
+
+font-family:"Inter",sans-serif;
+
+font-size:15px;
+
+line-height:1.7;
+
+}
+
+
+.book-btn{
+
+display:inline-block;
+
+background:#5b7bbf;
+
+color:white;
+
+padding:12px 30px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.service-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.nails-hero h1{
+
+font-size:40px;
+
+}
+
+}
 
