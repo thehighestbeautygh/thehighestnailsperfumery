@@ -1814,6 +1814,39 @@ transition:.3s ease;
 transform:translateY(-4px);
 
 }
+/* HERO MESSAGE BOX */
+
+.hero-message-box{
+
+border:1px solid #b8b8b8;
+
+padding:22px 28px;
+
+margin:25px auto;
+
+max-width:560px;
+
+border-radius:14px;
+
+background:rgba(255,255,255,0.45);
+
+box-shadow:
+0 0 18px rgba(170,170,170,0.25);
+
+}
+
+
+.hero-message-box p{
+
+margin:0;
+
+line-height:1.8;
+
+font-size:18px;
+
+color:#333;
+
+}
 
 
 
