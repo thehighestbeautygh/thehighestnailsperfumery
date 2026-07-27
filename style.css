@@ -2887,5 +2887,231 @@ background:#405f9d;
 
 transform:translateY(-3px);
 
+/* ==========================
+   LASHES PAGE
+========================== */
+
+.lashes-hero{
+
+padding:90px 8%;
+
+background:#ffffff;
+
+text-align:center;
+
+}
+
+
+.lashes-hero-content{
+
+max-width:750px;
+
+margin:auto;
+
+}
+
+
+.section-star,
+.pink-star{
+
+display:block;
+
+font-size:32px;
+
+color:#e7a1b5;
+
+margin-bottom:15px;
+
+}
+
+
+.lashes-hero h1{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:48px;
+
+font-weight:600;
+
+color:#111;
+
+}
+
+
+.lashes-hero p{
+
+font-family:"Inter",sans-serif;
+
+font-size:16px;
+
+line-height:1.8;
+
+color:#555;
+
+margin:20px auto;
+
+max-width:650px;
+
+}
+
+
+
+.lashes-section{
+
+padding:80px 8%;
+
+background:#ffffff;
+
+}
+
+
+
+.lashes-heading{
+
+text-align:center;
+
+margin-bottom:50px;
+
+}
+
+
+.lashes-heading h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:42px;
+
+color:#111;
+
+}
+
+
+
+.lashes-heading p{
+
+font-family:"Inter",sans-serif;
+
+color:#555;
+
+font-size:16px;
+
+}
+
+
+
+.lashes-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+}
+
+
+
+.lash-card{
+
+background:#fff;
+
+border:1px solid #f1c5d2;
+
+border-radius:20px;
+
+padding:22px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+transition:.35s ease;
+
+}
+
+
+
+.lash-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+.lash-card img{
+
+width:170px;
+
+height:170px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.lash-card h3{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:28px;
+
+color:#111;
+
+}
+
+
+
+.lash-card p{
+
+font-family:"Inter",sans-serif;
+
+font-size:15px;
+
+line-height:1.7;
+
+color:#555;
+
+}
+
+
+
+.lash-book-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 28px;
+
+background:#f3b6c8;
+
+color:white;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-family:"Inter",sans-serif;
+
+font-weight:600;
+
+transition:.3s ease;
+
+}
+
+
+
+.lash-book-btn:hover{
+
+background:#dc8da8;
+
+transform:translateY(-3px);
+
 }
 
