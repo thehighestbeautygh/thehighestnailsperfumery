@@ -2178,5 +2178,62 @@ margin-bottom:4px !important;
 .experience-heading{
     margin-top:0 !important;
 }
+/* ===============================
+   LUXURY SIDE MENU FORCE STYLE
+================================ */
+
+.side-menu{
+
+background:rgba(25,25,25,0.92) !important;
+
+backdrop-filter:blur(15px);
+
+width:320px !important;
+
+padding:35px 28px !important;
+
+box-shadow:0 0 40px rgba(0,0,0,.35);
+
+}
+
+.side-menu a{
+
+color:#ffffff !important;
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:22px !important;
+
+letter-spacing:1px;
+
+text-decoration:none;
+
+margin:18px 0;
+
+transition:.3s ease;
+
+}
+
+
+.side-menu a:hover{
+
+color:#c8c8c8 !important;
+
+padding-left:8px;
+
+}
+
+
+.close-btn{
+
+background:transparent !important;
+
+color:white !important;
+
+font-size:25px !important;
+
+border:none;
+
+}
 
 
