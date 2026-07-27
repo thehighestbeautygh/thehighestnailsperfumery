@@ -1752,5 +1752,69 @@ html{
 scroll-behavior:smooth;
 
 }
+/* HERO TEXT ENTRANCE */
+
+.hero-content{
+
+animation:heroContentReveal 1.2s ease forwards;
+
+}
+
+
+@keyframes heroContentReveal{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+.hero-content p{
+
+animation:softFloat 5s ease-in-out infinite;
+
+}
+
+
+@keyframes softFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-3px);
+
+}
+
+}
+.hero-buttons a{
+
+transition:.3s ease;
+
+}
+
+
+.hero-buttons a:hover{
+
+transform:translateY(-4px);
+
+}
+
+
 
 
