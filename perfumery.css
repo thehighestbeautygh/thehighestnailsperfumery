@@ -201,3 +201,41 @@ font-size:17px;
 line-height:1.7;
 font-weight:500;
 }
+/* PERFUMERY SIZE ADJUSTMENT */
+
+.perfume-hero{
+padding:140px 8%;
+}
+
+.typing-text{
+font-size:60px;
+letter-spacing:3px;
+}
+
+.perfume-hero h1{
+font-size:58px;
+margin-top:25px;
+}
+
+.perfume-section{
+padding:110px 6%;
+}
+
+.perfume-grid{
+grid-template-columns:repeat(3,1fr);
+gap:45px;
+max-width:1200px;
+margin:60px auto;
+}
+
+.perfume-card{
+padding:28px;
+}
+
+.perfume-card img{
+height:320px;
+}
+
+.perfume-card h3{
+font-size:32px;
+}
