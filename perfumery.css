@@ -299,4 +299,105 @@ font-size:32px;
 }
 
 }
+/* ================================
+   PERFUMERY FINAL LUXURY OVERRIDE
+================================ */
+
+
+/* HERO */
+
+.perfume-hero{
+    padding:80px 5% !important;
+    min-height:auto !important;
+}
+
+
+.typing-text{
+    font-size:65px !important;
+}
+
+
+.perfume-hero h1{
+    font-size:55px !important;
+    max-width:1000px !important;
+    margin:25px auto !important;
+}
+
+
+.perfume-hero p{
+    max-width:750px !important;
+    font-size:18px !important;
+}
+
+
+
+/* COLLECTION SECTION */
+
+.perfume-section{
+    padding:70px 4% !important;
+}
+
+
+/* MAKE CARDS BIGGER */
+
+.perfume-grid{
+    display:grid !important;
+    grid-template-columns:repeat(2, minmax(300px, 1fr)) !important;
+    gap:45px !important;
+    max-width:1200px !important;
+    margin:50px auto !important;
+}
+
+
+.perfume-card{
+    width:100% !important;
+    padding:35px !important;
+    border-radius:30px !important;
+}
+
+
+.perfume-card img{
+    width:100% !important;
+    height:380px !important;
+    object-fit:cover !important;
+    border-radius:25px !important;
+}
+
+
+.perfume-card h3{
+    font-size:38px !important;
+}
+
+
+.perfume-card p{
+    font-size:17px !important;
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.perfume-grid{
+    grid-template-columns:1fr !important;
+    padding:0 15px !important;
+}
+
+
+.perfume-card img{
+    height:350px !important;
+}
+
+
+.perfume-hero h1{
+    font-size:42px !important;
+}
+
+
+.typing-text{
+    font-size:55px !important;
+}
+
+}
 
