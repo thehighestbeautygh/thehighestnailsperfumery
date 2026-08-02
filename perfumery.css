@@ -400,4 +400,91 @@ font-size:32px;
 }
 
 }
+/* PERFUMERY TYPOGRAPHY UPGRADE */
+
+.perfume-hero h1{
+    font-size:64px;
+    line-height:1.15;
+    max-width:900px;
+}
+
+.perfume-hero p{
+    font-size:20px;
+    line-height:1.9;
+    max-width:750px;
+}
+
+
+.typing-text{
+    font-size:72px;
+    letter-spacing:5px;
+}
+
+
+.perfume-section h2{
+    font-size:50px;
+}
+
+
+.perfume-section p{
+    font-size:19px;
+    line-height:1.8;
+}
+
+
+.perfume-card h3{
+    font-size:38px;
+}
+
+
+.perfume-card p{
+    font-size:18px;
+}
+
+
+.perfume-card .book-btn{
+    font-size:16px;
+    padding:15px 35px;
+}
+
+
+/* MOBILE SIZE */
+
+@media(max-width:768px){
+
+.perfume-hero h1{
+    font-size:46px;
+}
+
+
+.perfume-hero p{
+    font-size:17px;
+}
+
+
+.typing-text{
+    font-size:55px;
+}
+
+
+.perfume-section h2{
+    font-size:38px;
+}
+
+
+.perfume-section p{
+    font-size:16px;
+}
+
+
+.perfume-card h3{
+    font-size:32px;
+}
+
+
+.perfume-card p{
+    font-size:16px;
+}
+
+}
 
