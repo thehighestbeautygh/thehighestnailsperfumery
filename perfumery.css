@@ -487,4 +487,90 @@ font-size:32px;
 }
 
 }
+/* ===============================
+   PERFUMERY FINAL SIZE OVERRIDE
+================================ */
+
+
+.perfume-hero h1{
+    font-size:64px !important;
+    line-height:1.2 !important;
+}
+
+
+.perfume-hero p{
+    font-size:20px !important;
+    line-height:1.9 !important;
+}
+
+
+.typing-text{
+    font-size:70px !important;
+}
+
+
+.perfume-section h2{
+    font-size:50px !important;
+}
+
+
+.perfume-section > p{
+    font-size:20px !important;
+}
+
+
+.perfume-card h3{
+    font-size:38px !important;
+}
+
+
+.perfume-card p{
+    font-size:18px !important;
+}
+
+
+.perfume-card .book-btn{
+    font-size:17px !important;
+    padding:16px 40px !important;
+}
+
+
+
+@media(max-width:768px){
+
+.perfume-hero h1{
+    font-size:50px !important;
+}
+
+
+.perfume-hero p{
+    font-size:18px !important;
+}
+
+
+.typing-text{
+    font-size:60px !important;
+}
+
+
+.perfume-section h2{
+    font-size:42px !important;
+}
+
+
+.perfume-section > p{
+    font-size:17px !important;
+}
+
+
+.perfume-card h3{
+    font-size:34px !important;
+}
+
+
+.perfume-card p{
+    font-size:17px !important;
+}
+
+}
 
