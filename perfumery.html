@@ -301,3 +301,27 @@
     </p>
 
 </footer>
+<script>
+
+const text = "HOLA";
+const typing = document.querySelector(".typing");
+
+let index = 0;
+
+function typeEffect(){
+
+    if(index < text.length){
+
+        typing.innerHTML += text.charAt(index);
+
+        index++;
+
+        setTimeout(typeEffect,400);
+
+    }
+
+}
+
+typeEffect();
+
+</script>
