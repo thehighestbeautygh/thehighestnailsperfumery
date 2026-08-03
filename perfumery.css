@@ -1,314 +1,156 @@
-/* ==========================================
-   THE HIGHEST PERFUMERY
-   LUXURY EDITION
-========================================== */
+/*==================================
+THE HIGHEST PERFUMERY V2
+==================================*/
 
-body{
+*{
 margin:0;
 padding:0;
-background:#ffffff;
+box-sizing:border-box;
+}
+
+body{
+
 font-family:"Inter",sans-serif;
-color:#222;
+
+background:#0d0d0d;
+
+color:#fff;
+
+overflow-x:hidden;
+
 }
 
 
-/*=========================
- HERO
-==========================*/
+/* HEADER */
 
-.perfume-hero{
+.perfume-header{
 
-min-height:95vh;
+padding:30px 8%;
 
 display:flex;
 
-align-items:center;
+justify-content:flex-start;
 
-justify-content:center;
+background:#0d0d0d;
 
-padding:80px 8%;
+}
+
+
+/* HERO */
+
+.perfume-hero{
+
+position:relative;
+
+padding:90px 8% 70px;
+
+text-align:center;
+
+overflow:hidden;
 
 background:
 linear-gradient(
 135deg,
-#050505 0%,
-#101010 45%,
-#181818 100%
-);
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-
-.perfume-hero::before{
-
-content:"";
-
-position:absolute;
-
-width:500px;
-
-height:500px;
-
-background:rgba(255,255,255,.04);
-
-border-radius:50%;
-
-filter:blur(120px);
-
-top:-180px;
-
-right:-120px;
-
-}
-
-
-.perfume-hero::after{
-
-content:"";
-
-position:absolute;
-
-width:420px;
-
-height:420px;
-
-background:rgba(255,255,255,.03);
-
-border-radius:50%;
-
-filter:blur(120px);
-
-bottom:-180px;
-
-left:-120px;
+#050505,
+#121212,
+#0d0d0d);
 
 }
 
 
 .perfume-hero-content{
 
-width:100%;
+max-width:900px;
 
-max-width:950px;
-
-text-align:center;
+margin:auto;
 
 position:relative;
 
-z-index:5;
+z-index:10;
 
 }
 
 
-/* COLLECTION */
+.glass-orb{
 
-.perfume-section{
-padding:110px 7%;
-background:#fff;
-}
+position:absolute;
 
-.section-title{
-text-align:center;
-max-width:760px;
-margin:0 auto 70px;
-}
+border-radius:50%;
 
-.gold-icon{
-display:block;
-font-size:34px;
-color:#b08d57;
-margin-bottom:18px;
-}
+filter:blur(90px);
 
-.section-title h2{
-font-family:"Cormorant Garamond",serif;
-font-size:54px;
-font-weight:600;
-color:#111;
-margin-bottom:18px;
-}
+opacity:.25;
 
-.section-title p{
-font-size:19px;
-line-height:1.8;
-color:#666;
-}
-/* ==========================================
-   PERFUME CARDS
-========================================== */
-
-.perfume-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:45px;
-max-width:1350px;
-margin:auto;
-}
-
-.perfume-card{
-background:#fff;
-border:1px solid rgba(176,141,87,.25);
-border-radius:26px;
-padding:24px;
-text-align:center;
-box-shadow:0 18px 45px rgba(0,0,0,.06);
-transition:.35s ease;
-}
-
-.perfume-card:hover{
-transform:translateY(-10px);
-box-shadow:0 25px 60px rgba(176,141,87,.18);
-}
-
-.perfume-card img{
-width:100%;
-height:390px;
-object-fit:cover;
-border-radius:20px;
-display:block;
-}
-
-.perfume-card h3{
-font-family:"Cormorant Garamond",serif;
-font-size:38px;
-font-weight:600;
-margin:24px 0 10px;
-color:#111;
-}
-
-.perfume-card p{
-font-size:17px;
-line-height:1.8;
-color:#666;
-margin-bottom:24px;
-}
-
-.shop-btn{
-display:inline-block;
-padding:14px 36px;
-border-radius:50px;
-background:#b08d57;
-color:#fff;
-text-decoration:none;
-font-weight:600;
-letter-spacing:.5px;
-transition:.35s ease;
-}
-
-.shop-btn:hover{
-background:#8e6d3e;
-transform:translateY(-3px);
-box-shadow:0 12px 25px rgba(176,141,87,.35);
 }
 
 
-/* FOOTER */
+.orb1{
 
-.site-footer{
-background:#111;
-padding:70px 8%;
-text-align:center;
-color:#fff;
+width:320px;
+
+height:320px;
+
+background:#ffffff;
+
+top:-120px;
+
+right:-80px;
+
 }
 
-.site-footer h2{
-font-family:"Cormorant Garamond",serif;
-font-size:42px;
-margin-bottom:18px;
-color:#fff;
+
+.orb2{
+
+width:260px;
+
+height:260px;
+
+background:#9b9b9b;
+
+bottom:-80px;
+
+left:-80px;
+
 }
 
-.site-footer p{
-color:#d5d5d5;
-font-size:17px;
-line-height:1.8;
-}
-
-.footer-contact{
-margin:30px 0;
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-}
-
-.footer-contact a{
-color:#d4af37;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
-}
-
-.footer-contact a:hover{
-color:#fff;
-}
-
-.footer-copy{
-margin-top:20px;
-font-style:italic;
-color:#d4af37;
-}
-/* ==========================================
-   MOBILE RESPONSIVE
-========================================== */
-
-@media (max-width:900px){
-
-.perfume-hero{
-padding:90px 7%;
-}
 
 .typing-text{
 
-font-size:72px;
-
 font-family:"Cormorant Garamond",serif;
+
+font-size:58px;
 
 font-weight:700;
 
-letter-spacing:6px;
+letter-spacing:3px;
 
-color:#ececec;
+margin-bottom:18px;
 
-margin-bottom:28px;
+color:#e5e5e5;
 
-min-height:90px;
-
-text-transform:uppercase;
+min-height:70px;
 
 }
 
-.typing{
-
-color:#d9d9d9;
-
-}
 
 .perfume-hero h1{
 
-font-size:68px;
-
 font-family:"Cormorant Garamond",serif;
+
+font-size:56px;
 
 font-weight:600;
 
-line-height:1.08;
-
-color:white;
+line-height:1.15;
 
 margin-bottom:22px;
 
 }
 
+
 .perfume-hero p{
 
 font-size:18px;
-
-color:#bcbcbc;
 
 max-width:620px;
 
@@ -316,129 +158,206 @@ margin:auto;
 
 line-height:1.8;
 
-margin-bottom:40px;
+color:#bfbfbf;
 
-}
-
-.section-title h2{
-font-size:40px;
-}
-
-.section-title p{
-font-size:16px;
-}
-
-.perfume-grid{
-grid-template-columns:1fr;
-gap:35px;
-}
-
-.perfume-card img{
-height:360px;
-}
-
-.perfume-card h3{
-font-size:32px;
-}
-
-.site-footer h2{
-font-size:34px;
-}
+margin-bottom:35px;
 
 }
 
 
-@media (max-width:600px){
+/* BUTTONS */
 
-.perfume-hero{
-padding:70px 20px;
-}
+.hero-btn,
 
-.typing-text{
-
-font-size:72px;
-
-font-family:"Cormorant Garamond",serif;
-
-font-weight:700;
-
-letter-spacing:6px;
-
-color:#ececec;
-
-margin-bottom:28px;
-
-min-height:90px;
-
-text-transform:uppercase;
-
-}
-
-.typing{
-
-color:#d9d9d9;
-
-}
-
-.perfume-hero h1{
-font-size:38px;
-}
-
-.perfume-hero p{
-font-size:16px;
-}
-
-.section-title{
-margin-bottom:50px;
-}
-
-.section-title h2{
-font-size:34px;
-}
-
-.perfume-card{
-padding:18px;
-}
-
-.perfume-card img{
-height:320px;
-}
-
-.shop-btn{
-display:block;
-width:100%;
-padding:15px;
-font-size:16px;
-}
-
-.footer-contact{
-flex-direction:column;
-gap:15px;
-}
-
-}
-
-
-/* ==========================================
-   LUXURY ANIMATIONS
-========================================== */
-
-.perfume-card,
 .perfume-back-btn{
 
 display:inline-block;
 
-padding:15px 34px;
+padding:14px 34px;
+
+margin:8px;
+
+text-decoration:none;
+
+color:#fff;
 
 border-radius:50px;
 
 background:rgba(255,255,255,.08);
 
-border:1px solid rgba(255,255,255,.18);
+border:1px solid rgba(255,255,255,.15);
+
+backdrop-filter:blur(16px);
+
+-webkit-backdrop-filter:blur(16px);
+
+transition:.35s;
+
+}
+
+.hero-btn:hover,
+
+.perfume-back-btn:hover{
+
+transform:translateY(-4px);
+
+background:rgba(255,255,255,.14);
+
+}
+/*=============================
+SCENT ARCHIVE
+==============================*/
+
+.perfume-section{
+
+padding:80px 8%;
+
+background:#111;
+
+}
+
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+
+.gold-line{
+
+display:block;
+
+width:70px;
+
+height:2px;
+
+background:silver;
+
+margin:0 auto 20px;
+
+}
+
+
+.section-title h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:46px;
+
+margin-bottom:14px;
+
+}
+
+
+.section-title p{
+
+color:#bdbdbd;
+
+font-size:17px;
+
+}
+
+
+.perfume-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:35px;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+
+/* GLASS CARDS */
+
+.perfume-card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.12);
 
 backdrop-filter:blur(18px);
 
 -webkit-backdrop-filter:blur(18px);
+
+border-radius:28px;
+
+padding:24px;
+
+transition:.4s;
+
+overflow:hidden;
+
+}
+
+
+.perfume-card:hover{
+
+transform:translateY(-10px);
+
+border-color:silver;
+
+box-shadow:0 20px 45px rgba(255,255,255,.08);
+
+}
+
+
+.perfume-card img{
+
+width:100%;
+
+height:420px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+margin-bottom:20px;
+
+}
+
+
+.perfume-card h3{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:34px;
+
+margin-bottom:10px;
+
+}
+
+
+.perfume-card p{
+
+color:#bdbdbd;
+
+margin-bottom:20px;
+
+line-height:1.7;
+
+}
+
+
+.shop-btn{
+
+display:inline-block;
+
+padding:12px 30px;
+
+border-radius:40px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid silver;
 
 color:white;
 
@@ -448,59 +367,457 @@ transition:.35s;
 
 }
 
-.perfume-back-btn:hover{
 
-background:rgba(255,255,255,.15);
+.shop-btn:hover{
+
+background:silver;
+
+color:#111;
+
+}
+/*==================================
+SCENT THOUGHTS
+==================================*/
+
+.scent-thoughts{
+
+padding:90px 8%;
+
+background:#0d0d0d;
+
+}
+
+.silver-star{
+
+display:block;
+
+font-size:30px;
+
+color:silver;
+
+margin-bottom:18px;
+
+text-align:center;
+
+}
+
+.thought-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.thought-card{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.12);
+
+border-radius:24px;
+
+padding:35px;
+
+transition:.35s;
+
+}
+
+.thought-card:hover{
+
+transform:translateY(-8px);
+
+border-color:silver;
+
+}
+
+.thought-card p{
+
+line-height:1.8;
+
+font-size:17px;
+
+color:#d8d8d8;
+
+}
+
+
+
+/*==========================
+TODAY'S PICK
+==========================*/
+
+.todays-pick{
+
+padding:90px 8%;
+
+background:#111;
+
+}
+
+.glass-box{
+
+max-width:700px;
+
+margin:auto;
+
+text-align:center;
+
+padding:50px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.12);
+
+border-radius:28px;
+
+backdrop-filter:blur(18px);
+
+}
+
+.glass-box h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+.glass-box p{
+
+color:#cfcfcf;
+
+margin-bottom:30px;
+
+}
+
+#surpriseBtn{
+
+padding:15px 35px;
+
+background:silver;
+
+color:#111;
+
+border:none;
+
+border-radius:40px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+#surpriseBtn:hover{
 
 transform:translateY(-4px);
 
 }
 
-.perfume-card:hover img{
-transform:scale(1.03);
-transition:.4s ease;
+
+
+/*==========================
+POPUP
+==========================*/
+
+.popup-overlay{
+
+display:none;
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.75);
+
+justify-content:center;
+
+align-items:center;
+
+z-index:999;
+
 }
 
-.perfume-card img{
-transition:.4s ease;
+.popup-card{
+
+width:90%;
+
+max-width:500px;
+
+padding:45px;
+
+background:rgba(25,25,25,.95);
+
+border:1px solid silver;
+
+border-radius:28px;
+
+text-align:center;
+
+backdrop-filter:blur(20px);
+
 }
 
-.typing::after{
-content:"";
+.popup-card h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:40px;
+
+margin-bottom:15px;
+
+}
+
+.popup-card p{
+
+color:#cfcfcf;
+
+line-height:1.8;
+
+margin-bottom:28px;
+
+}
+
+.popup-btn{
+
 display:inline-block;
-width:2px;
-height:1em;
-background:#b08d57;
-margin-left:4px;
-animation:blink .8s infinite;
-}
 
-@keyframes blink{
+padding:14px 30px;
 
-0%,50%{
-opacity:1;
-}
+background:silver;
 
-51%,100%{
-opacity:0;
-}
+color:#111;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-weight:600;
+
+margin-bottom:15px;
 
 }
 
+#closePopup{
 
-/* ==========================================
-   FINAL OVERRIDES
-========================================== */
-
-html{
-scroll-behavior:smooth;
-}
-
-*{
-box-sizing:border-box;
-}
-
-img{
-max-width:100%;
 display:block;
+
+margin:auto;
+
+background:none;
+
+border:none;
+
+color:#bdbdbd;
+
+cursor:pointer;
+
+font-size:15px;
+
+}
+/*==================================
+REQUEST SECTION
+==================================*/
+
+.request-section{
+
+padding:90px 8%;
+
+background:#0d0d0d;
+
+}
+
+.request-box{
+
+max-width:850px;
+
+margin:auto;
+
+text-align:center;
+
+padding:55px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.12);
+
+border-radius:28px;
+
+backdrop-filter:blur(20px);
+
+}
+
+.request-box h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:42px;
+
+margin-bottom:18px;
+
+}
+
+.request-box p{
+
+max-width:600px;
+
+margin:auto;
+
+line-height:1.8;
+
+color:#cfcfcf;
+
+margin-bottom:28px;
+
+}
+
+.request-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+border-radius:40px;
+
+background:silver;
+
+color:#111;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.request-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+
+
+/*==================================
+FOOTER
+==================================*/
+
+.perfume-footer{
+
+padding:35px 8%;
+
+background:#050505;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-content{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.footer-content h3{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:30px;
+
+}
+
+.footer-links{
+
+display:flex;
+
+gap:22px;
+
+}
+
+.footer-links a{
+
+text-decoration:none;
+
+color:#d7d7d7;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:silver;
+
+}
+
+.footer-content p{
+
+color:#8d8d8d;
+
+font-size:14px;
+
+}
+
+
+
+/*==================================
+RESPONSIVE
+==================================*/
+
+@media(max-width:900px){
+
+.perfume-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.thought-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.perfume-hero h1{
+
+font-size:42px;
+
+}
+
+.typing-text{
+
+font-size:42px;
+
+}
+
+.footer-content{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
 }
