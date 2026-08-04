@@ -12,7 +12,10 @@
 <link rel="stylesheet" href="style.css">
 
 <link rel="stylesheet" href="perfumery.css">
-
+<link 
+rel="stylesheet" 
+href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 </head>
@@ -32,13 +35,19 @@
 
 <!-- HERO -->
 
-<section class="perfume-hero">
+<section 
+class="perfume-hero"
+data-aos="fade-up"
+data-aos-duration="1000">
 
 <div class="glass-orb orb1"></div>
 
 <div class="glass-orb orb2"></div>
 
-<div class="perfume-hero-content">
+<div 
+class="perfume-hero-content"
+data-aos="fade-up"
+data-aos-delay="200">
 
 <div class="typing-text">
 
@@ -103,7 +112,9 @@ Discover fragrances chosen for every mood, personality and occasion.
 
 <!-- CARD 1 -->
 
-<div class="perfume-card">
+<div 
+class="perfume-card"
+data-aos="fade-up">
 
 <img src="images/IMG_5082.JPG" alt="Tofy">
 
@@ -129,7 +140,10 @@ Message Us
 
 <!-- CARD 2 -->
 
-<div class="perfume-card">
+<div 
+class="perfume-card"
+data-aos="fade-up"
+data-aos-delay="100">
 
 <img src="images/IMG_5197.JPG" alt="9PM">
 
@@ -152,7 +166,10 @@ Message Us
 </div>
 <!-- CARD 3 -->
 
-<div class="perfume-card">
+<div 
+class="perfume-card"
+data-aos="fade-up"
+data-aos-delay="200">
 
 <img src="images/IMG_5198.JPG" alt="Hawas">
 
@@ -178,8 +195,10 @@ Message Us
 
 <!-- CARD 4 -->
 
-<div class="perfume-card">
-
+<div 
+class="perfume-card"
+data-aos="fade-up"
+data-aos-delay="300">
 <img src="images/IMG_5202.JPG" alt="Liquid Brun">
 
 <h3>Liquid Brun</h3>
@@ -204,7 +223,10 @@ Message Us
 
 <!-- CARD 5 -->
 
-<div class="perfume-card">
+<div 
+class="perfume-card"
+data-aos="fade-up"
+data-aos-delay="400">
 
 <img src="images/IMG_5318.JPG" alt="Khair">
 
@@ -230,7 +252,10 @@ Message Us
 
 <!-- CARD 6 -->
 
-<div class="perfume-card">
+  <div 
+class="perfume-card"
+data-aos="fade-up"
+data-aos-delay="500">
 
 <img src="images/IMG_5332.JPG" alt="Bodycology">
 
@@ -256,7 +281,10 @@ Message Us
 
 <!-- CARD 7 -->
 
-<div class="perfume-card">
+<div 
+class="perfume-card"
+data-aos="fade-up"
+data-aos-delay="600">
 
 <img src="images/IMG_5344.JPG" alt="Now Women">
 
@@ -282,7 +310,10 @@ Message Us
 
 <!-- CARD 8 -->
 
-<div class="perfume-card">
+<div 
+class="perfume-card"
+data-aos="fade-up"
+data-aos-delay="700">
 
 <img src="images/IMG_5367.JPG" alt="Vintage Radio">
 
@@ -602,9 +633,75 @@ message:"Light, fresh and easy to love."
 }
 
 ];
+<section class="scent-request" data-aos="fade-up">
+
+    <div class="request-card">
+
+        <h2>
+            Can't find your scent?
+        </h2>
+
+        <p>
+            Tell us the fragrance you’re looking for and we’ll help you find your perfect match.
+        </p>
+
+        <a href="https://wa.me/233594039815" class="request-btn">
+            Shop Your Favourite Scent
+        </a>
+
+    </div>
+
+</section>
+
+<section class="surprise-section" data-aos="fade-up">
+
+    <div class="surprise-card">
+
+        <span class="surprise-icon">
+            ✦
+        </span>
+
+        <h2>
+            Looking for something unexpected?
+        </h2>
+
+        <p>
+            Discover our special fragrance pick.
+        </p>
+
+        <button id="surpriseBtn">
+            Click here for a surprise
+        </button>
+
+    </div>
 
 
+    <div id="surprisePopup" class="surprise-popup">
 
+        <div class="popup-content">
+
+            <button id="closePopup">
+                ×
+            </button>
+
+            <h3>
+                Today's Surprise Pick ✨
+            </h3>
+
+            <p>
+                It's time to try <strong>Lush Cherry</strong>.
+                A sweet, unforgettable scent waiting for you.
+            </p>
+
+            <a href="https://wa.me/233594039815">
+                I want this scent
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 const popup=document.getElementById("popup");
 
 
@@ -646,7 +743,44 @@ popup.style.display="none";
 }
 
 </script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+<script>
+
+AOS.init({
+
+duration:900,
+
+once:true,
+
+offset:120
+
+});
+
+</script>
+  <script>
+
+const surpriseBtn = document.getElementById("surpriseBtn");
+
+const surprisePopup = document.getElementById("surprisePopup");
+
+const closePopup = document.getElementById("closePopup");
+
+
+surpriseBtn.onclick = function(){
+
+surprisePopup.classList.add("active");
+
+};
+
+
+closePopup.onclick = function(){
+
+surprisePopup.classList.remove("active");
+
+};
+
+</script>
 </body>
 
 </html>
