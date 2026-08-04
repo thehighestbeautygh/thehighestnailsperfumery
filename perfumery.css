@@ -41,7 +41,7 @@ display:flex;
 
 justify-content:flex-start;
 
-background:#0d0d0d;
+background:#faf9f7;
 
 }
 
@@ -246,7 +246,7 @@ SCENT ARCHIVE
 
 padding:80px 8%;
 
-background:#111;
+background:#faf9f7;
 
 }
 
@@ -417,7 +417,7 @@ SCENT THOUGHTS
 
 padding:90px 8%;
 
-background:#0d0d0d;
+background:#faf9f7;
 
 }
 
@@ -493,7 +493,7 @@ TODAY'S PICK
 
 padding:90px 8%;
 
-background:#111;
+background:#faf9f7;
 
 }
 
@@ -670,7 +670,7 @@ REQUEST SECTION
 
 padding:90px 8%;
 
-background:#0d0d0d;
+background:#faf9f7;
 
 }
 
@@ -851,6 +851,302 @@ font-size:42px;
 flex-direction:column;
 
 text-align:center;
+
+}
+
+}
+/*=========================================
+FINAL POLISH OVERRIDE
+=========================================*/
+
+/* Page backgrounds */
+
+body,
+.perfume-section,
+.scent-thoughts,
+.request-section{
+
+background:#faf9f7 !important;
+
+}
+
+.todays-pick{
+
+background:#f4f3f1 !important;
+
+}
+
+.perfume-footer{
+
+background:#f1f1f1 !important;
+
+border-top:1px solid rgba(0,0,0,.08);
+
+}
+
+
+/* Hero */
+
+.perfume-hero{
+
+background:linear-gradient(
+180deg,
+#ffffff,
+#faf9f7,
+#f6f5f3
+)!important;
+
+}
+
+.typing-text{
+
+color:#6D213C !important;
+
+}
+
+.perfume-hero h1{
+
+color:#222 !important;
+
+}
+
+.perfume-hero p{
+
+color:#666 !important;
+
+}
+
+
+/* Headings */
+
+.section-title h2,
+.request-box h2,
+.glass-box h2{
+
+color:#222 !important;
+
+}
+
+.gold-line,
+.silver-star{
+
+background:#6D213C !important;
+
+color:#6D213C !important;
+
+}
+
+
+/* Glass Buttons */
+
+.hero-btn,
+.perfume-back-btn,
+.shop-btn{
+
+background:rgba(255,255,255,.72) !important;
+
+border:1px solid rgba(109,33,60,.18) !important;
+
+color:#222 !important;
+
+backdrop-filter:blur(20px);
+
+-webkit-backdrop-filter:blur(20px);
+
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+/* Cards */
+
+.perfume-grid{
+
+max-width:980px !important;
+
+margin:auto !important;
+
+gap:28px !important;
+
+}
+
+.perfume-card{
+
+max-width:420px !important;
+
+margin:auto !important;
+
+padding:18px !important;
+
+border-radius:20px !important;
+
+background:rgba(255,255,255,.78) !important;
+
+border:1px solid rgba(109,33,60,.10) !important;
+
+box-shadow:0 10px 30px rgba(0,0,0,.05) !important;
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
+
+}
+
+.perfume-card:hover{
+
+transform:translateY(-6px);
+
+border-color:#6D213C !important;
+
+}
+
+.perfume-card img{
+
+height:250px !important;
+
+border-radius:16px !important;
+
+transition:.35s;
+
+}
+
+.perfume-card:hover img{
+
+transform:scale(1.03);
+
+}
+
+.perfume-card h3{
+
+font-size:27px !important;
+
+color:#222 !important;
+
+margin:14px 0 8px;
+
+}
+
+.perfume-card p{
+
+font-size:14px !important;
+
+line-height:1.6 !important;
+
+color:#666 !important;
+
+margin-bottom:18px;
+
+}
+
+
+/* Buttons */
+
+.shop-btn:hover,
+.hero-btn:hover,
+.perfume-back-btn:hover{
+
+background:#6D213C !important;
+
+color:#fff !important;
+
+border-color:#6D213C !important;
+
+}
+
+.request-btn,
+#surpriseBtn,
+.popup-btn{
+
+background:#6D213C !important;
+
+color:#fff !important;
+
+border:none !important;
+
+}
+
+.request-btn:hover,
+#surpriseBtn:hover,
+.popup-btn:hover{
+
+opacity:.92;
+
+transform:translateY(-3px);
+
+}
+
+
+/* Request */
+
+.request-box,
+.glass-box,
+.popup-card,
+.thought-card{
+
+background:rgba(255,255,255,.72) !important;
+
+border:1px solid rgba(109,33,60,.10) !important;
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
+
+}
+
+.request-box p,
+.glass-box p,
+.popup-card p,
+.thought-card p{
+
+color:#666 !important;
+
+}
+
+
+/* Footer */
+
+.footer-content h3{
+
+color:#222 !important;
+
+}
+
+.footer-links a{
+
+color:#555 !important;
+
+}
+
+.footer-links a:hover{
+
+color:#6D213C !important;
+
+}
+
+.footer-content p{
+
+color:#777 !important;
+
+}
+
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.perfume-grid{
+
+grid-template-columns:1fr !important;
+
+}
+
+.perfume-card{
+
+max-width:360px !important;
+
+}
+
+.thought-grid{
+
+grid-template-columns:1fr !important;
 
 }
 
