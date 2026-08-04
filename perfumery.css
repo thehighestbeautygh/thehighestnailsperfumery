@@ -1151,3 +1151,306 @@ grid-template-columns:1fr !important;
 }
 
 }
+/* =========================================
+FINAL PERFUMERY POLISH OVERRIDE
+========================================= */
+
+
+/* ---------- GLOBAL COLORS ---------- */
+
+body,
+.perfume-page,
+.perfume-section,
+.scent-thoughts,
+.request-section{
+
+background:#faf9f7 !important;
+
+color:#222 !important;
+
+}
+
+
+/* ---------- FIX ALL TEXT VISIBILITY ---------- */
+
+.perfume-card h3,
+.section-title h2,
+.thought-card h3,
+.request-box h2,
+.popup-card h2{
+
+color:#222 !important;
+
+}
+
+
+.perfume-card p,
+.section-title p,
+.thought-card p,
+.request-box p,
+.popup-card p{
+
+color:#666 !important;
+
+opacity:1 !important;
+
+}
+
+
+/* ---------- HERO ---------- */
+
+.perfume-hero{
+
+background:#ffffff !important;
+
+}
+
+
+.typing-text{
+
+color:#6D213C !important;
+
+}
+
+
+.perfume-hero h1{
+
+color:#222 !important;
+
+}
+
+
+.hero-line{
+
+background:#6D213C !important;
+
+}
+
+
+/* ---------- PERFUME GRID ---------- */
+
+.perfume-grid{
+
+display:grid !important;
+
+grid-template-columns:repeat(2,1fr) !important;
+
+gap:28px !important;
+
+max-width:900px !important;
+
+margin:auto !important;
+
+}
+
+
+/* ---------- PERFUME CARDS ---------- */
+
+.perfume-card{
+
+display:flex !important;
+
+flex-direction:column !important;
+
+height:470px !important;
+
+padding:18px !important;
+
+border-radius:24px !important;
+
+background:rgba(255,255,255,.75) !important;
+
+border:1px solid rgba(109,33,60,.12) !important;
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.06) !important;
+
+overflow:hidden !important;
+
+}
+
+
+.perfume-card img{
+
+width:100% !important;
+
+height:250px !important;
+
+object-fit:cover !important;
+
+border-radius:18px !important;
+
+}
+
+
+.perfume-card h3{
+
+font-size:28px !important;
+
+margin:18px 0 10px !important;
+
+}
+
+
+.perfume-card p{
+
+font-size:14px !important;
+
+min-height:45px !important;
+
+margin-bottom:15px !important;
+
+}
+
+
+/* Keep buttons aligned */
+
+.shop-btn{
+
+margin-top:auto !important;
+
+}
+
+
+/* ---------- POPUP FIX ---------- */
+
+.popup-card,
+.surprise-card{
+
+background:white !important;
+
+color:#222 !important;
+
+}
+
+
+.popup-card h2,
+.surprise-card h2{
+
+color:#222 !important;
+
+}
+
+
+.popup-card p,
+.surprise-card p{
+
+color:#666 !important;
+
+opacity:1 !important;
+
+}
+
+
+/* Fix faded buttons/text */
+
+.popup-card button,
+.popup-card a,
+.surprise-card button{
+
+opacity:1 !important;
+
+visibility:visible !important;
+
+}
+
+
+.popup-close,
+.maybe-later,
+.close-btn{
+
+color:#6D213C !important;
+
+opacity:1 !important;
+
+font-weight:600 !important;
+
+}
+
+
+/* ---------- FEW THINGS WE BELIEVE CARDS ---------- */
+
+.thought-card{
+
+position:relative !important;
+
+overflow:hidden !important;
+
+background:white !important;
+
+border-radius:22px !important;
+
+border:1px solid rgba(109,33,60,.12) !important;
+
+}
+
+
+.thought-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+height:6px;
+
+width:100%;
+
+background:#6D213C;
+
+}
+
+
+/* ---------- BURGUNDY BUTTONS ---------- */
+
+.shop-btn,
+.request-btn,
+#surpriseBtn{
+
+background:#6D213C !important;
+
+color:white !important;
+
+border:none !important;
+
+}
+
+
+.shop-btn:hover,
+.request-btn:hover,
+#surpriseBtn:hover{
+
+background:#54162d !important;
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:700px){
+
+.perfume-grid{
+
+grid-template-columns:1fr !important;
+
+}
+
+
+.perfume-card{
+
+height:450px !important;
+
+max-width:360px !important;
+
+margin:auto !important;
+
+}
+
+}
