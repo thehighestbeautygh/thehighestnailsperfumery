@@ -3248,4 +3248,47 @@ transition:.3s;
 background:#e7a1b5 !important;
 color:#fff !important;
 }
+/* =========================================
+   FINAL HOMEPAGE POLISH
+   ========================================= */
 
+/* Center the hero slider properly */
+.hero-slider {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Keep the hero balanced on larger screens */
+@media (min-width: 769px) {
+    .hero {
+        justify-content: center !important;
+        gap: 70px !important;
+    }
+
+    .hero-content {
+        flex: 0 1 560px !important;
+    }
+
+    .hero-slider {
+        flex: 0 0 380px !important;
+    }
+}
+
+/* Give the hero a little less empty vertical space */
+.hero {
+    padding-top: 55px !important;
+    padding-bottom: 35px !important;
+}
+
+/* Keep the image clean and centered */
+.hero-slider {
+    position: relative !important;
+    display: block !important;
+}
+
+/* Keep the dots directly beneath the image */
+.slider-dots {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
