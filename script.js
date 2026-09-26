@@ -2,7 +2,27 @@
 // THE HIGHEST NAILS & PERFUMERY
 // FINAL WEBSITE JAVASCRIPT
 // ==========================================
+    // ==========================
+    // FIX HERO STRUCTURE
+    // ==========================
 
+    const hero = document.querySelector(".hero");
+    const heroContent = document.querySelector(".hero-content");
+    const quoteBox = document.querySelector(".quote-box");
+    const heroSlider = document.querySelector(".hero-slider");
+    const sliderDots = document.querySelector(".slider-dots");
+
+    if (hero && heroContent && quoteBox && heroSlider) {
+
+        // Rebuild the hero in the correct order
+        hero.appendChild(heroContent);
+        heroContent.appendChild(quoteBox);
+        hero.appendChild(heroSlider);
+
+        if (sliderDots) {
+            hero.appendChild(sliderDots);
+        }
+    }
 document.addEventListener("DOMContentLoaded", () => {
 
     // ==========================
