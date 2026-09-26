@@ -3525,3 +3525,229 @@ color:#fff !important;
     }
 
 }
+   /* ==========================================
+   FINAL POLISH — THE HIGHEST
+========================================== */
+
+
+/* ------------------------------------------
+   DESKTOP HERO POSITION
+------------------------------------------ */
+
+@media (min-width: 769px) {
+
+    .hero {
+        width: min(1100px, calc(100% - 60px)) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) 380px !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 70px !important;
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        max-width: 560px !important;
+        margin: 0 !important;
+    }
+
+    .hero-slider {
+        width: 380px !important;
+        height: 500px !important;
+
+        margin: 0 auto !important;
+
+        justify-self: center !important;
+    }
+
+}
+
+
+/* ------------------------------------------
+   KEEP ONLY THE HERO QUOTE VISIBLE
+------------------------------------------ */
+
+.quote {
+    display: none !important;
+}
+
+
+/* ------------------------------------------
+   SEARCH OVERLAY
+------------------------------------------ */
+
+#siteSearch {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 100px 20px 30px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition: 0.25s ease;
+
+    z-index: 99999;
+}
+
+#siteSearch.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+.search-panel {
+    position: relative;
+
+    width: min(600px, 100%);
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,.25);
+}
+
+
+.search-panel h2 {
+    margin: 0 0 20px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #222;
+}
+
+
+#siteSearchInput {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 15px 18px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+
+#siteSearchInput:focus {
+    border-color: #444;
+}
+
+
+.search-close {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    color: #444;
+}
+
+
+#searchResults {
+    margin-top: 20px;
+}
+
+
+.search-result {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    padding: 14px;
+
+    margin-bottom: 8px;
+
+    border-radius: 10px;
+
+    background: #f7f7f7;
+
+    color: #222;
+
+    text-decoration: none;
+}
+
+
+.search-result:hover {
+    background: #eeeeee;
+}
+
+
+.search-result strong {
+    font-size: 16px;
+}
+
+
+.search-result span {
+    font-size: 14px;
+
+    color: #666;
+}
+
+
+.no-results {
+    color: #777;
+}
+
+
+/* ------------------------------------------
+   MOBILE HERO — LEAVE MOBILE CENTERED
+------------------------------------------ */
+
+@media (max-width: 768px) {
+
+    .hero {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .hero-slider {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .search-panel {
+        padding: 30px 20px;
+    }
+
+}
