@@ -4041,3 +4041,30 @@ color:#fff !important;
     color: #ffffff !important;
     font-size: 25px !important;
 }
+/* ==========================================
+   SEARCH — REMOVE INITIAL STYLE FLASH
+========================================== */
+
+#siteSearch .search-panel {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 18px !important;
+}
+
+/* The panel itself should never look like a charcoal box */
+#siteSearch .search-panel::before {
+    display: none !important;
+}
+
+/* Keep only the actual search field visible */
+#siteSearch #siteSearchInput {
+    background: rgba(48, 48, 48, 0.62) !important;
+}
+
+/* Make the close button clean and unobtrusive */
+#siteSearch .search-close {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
