@@ -3925,3 +3925,62 @@ color:#fff !important;
 .no-results {
     color: #777 !important;
 }
+/* ==========================================
+   SEARCH — MATCH THE LUXURY GLASS MENU
+========================================== */
+
+#siteSearch {
+    background: rgba(0, 0, 0, 0.45) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+}
+
+#siteSearch .search-panel {
+    background: rgba(48, 48, 48, 0.72) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 20px !important;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28) !important;
+}
+
+#siteSearch .search-panel h2 {
+    color: #ffffff !important;
+}
+
+#siteSearch #siteSearchInput {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.20) !important;
+    border-radius: 14px !important;
+}
+
+#siteSearch #siteSearchInput::placeholder {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+#siteSearch #siteSearchInput:focus {
+    border-color: rgba(255, 255, 255, 0.45) !important;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.06) !important;
+}
+
+#siteSearch .search-close {
+    color: #ffffff !important;
+}
+
+#siteSearch .search-result {
+    background: rgba(255, 255, 255, 0.10) !important;
+    border: 1px solid rgba(255, 255, 255, 0.10) !important;
+    border-radius: 12px !important;
+    color: #ffffff !important;
+}
+
+#siteSearch .search-result span {
+    color: rgba(255, 255, 255, 0.70) !important;
+}
+
+#siteSearch .no-results {
+    color: rgba(255, 255, 255, 0.70) !important;
+}
