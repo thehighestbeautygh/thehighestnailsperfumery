@@ -4068,3 +4068,51 @@ color:#fff !important;
     border: none !important;
     box-shadow: none !important;
 }
+/* ==========================================
+   SEARCH — NO INITIAL FLASH
+========================================== */
+
+/* Disable every transition on the search components */
+#siteSearch,
+#siteSearch .search-panel,
+#siteSearch #siteSearchInput,
+#siteSearch .search-close {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* The search panel is always invisible as a container */
+#siteSearch .search-panel {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 18px !important;
+    border-radius: 0 !important;
+}
+
+/* Remove the old heading completely */
+#siteSearch .search-panel h2 {
+    display: none !important;
+}
+
+/* The search bar is the ONLY glass surface */
+#siteSearch #siteSearchInput {
+    background: rgba(48, 48, 48, 0.62) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 16px !important;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.20) !important;
+
+    color: #fff !important;
+}
+
+/* Clean close button */
+#siteSearch .search-close {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #fff !important;
+}
