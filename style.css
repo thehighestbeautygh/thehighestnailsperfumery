@@ -3926,61 +3926,64 @@ color:#fff !important;
     color: #777 !important;
 }
 /* ==========================================
-   SEARCH — MATCH THE LUXURY GLASS MENU
+   FINAL SEARCH — SLEEK LUXURY GLASS
 ========================================== */
 
-#siteSearch {
-    background: rgba(0, 0, 0, 0.45) !important;
-    backdrop-filter: blur(8px) !important;
-    -webkit-backdrop-filter: blur(8px) !important;
-}
-
 #siteSearch .search-panel {
-    background: rgba(48, 48, 48, 0.72) !important;
+    width: min(520px, calc(100% - 60px)) !important;
+    padding: 30px !important;
+
+    background: rgba(48, 48, 48, 0.62) !important;
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
 
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.14) !important;
+    border-radius: 24px !important;
 
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28) !important;
 }
 
 #siteSearch .search-panel h2 {
     color: #ffffff !important;
+    margin-bottom: 18px !important;
 }
 
 #siteSearch #siteSearchInput {
-    background: rgba(255, 255, 255, 0.12) !important;
+    height: 48px !important;
+    padding: 0 17px !important;
+
+    background: rgba(255, 255, 255, 0.08) !important;
     color: #ffffff !important;
-    border: 1px solid rgba(255, 255, 255, 0.20) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.14) !important;
     border-radius: 14px !important;
 }
 
 #siteSearch #siteSearchInput::placeholder {
-    color: rgba(255, 255, 255, 0.65) !important;
+    color: rgba(255, 255, 255, 0.62) !important;
 }
 
 #siteSearch #siteSearchInput:focus {
-    border-color: rgba(255, 255, 255, 0.45) !important;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.06) !important;
+    border-color: rgba(255, 255, 255, 0.30) !important;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.04) !important;
 }
 
 #siteSearch .search-close {
     color: #ffffff !important;
+    font-size: 25px !important;
 }
 
 #siteSearch .search-result {
-    background: rgba(255, 255, 255, 0.10) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
     border: 1px solid rgba(255, 255, 255, 0.10) !important;
     border-radius: 12px !important;
     color: #ffffff !important;
 }
 
 #siteSearch .search-result span {
-    color: rgba(255, 255, 255, 0.70) !important;
+    color: rgba(255, 255, 255, 0.68) !important;
 }
 
 #siteSearch .no-results {
-    color: rgba(255, 255, 255, 0.70) !important;
+    color: rgba(255, 255, 255, 0.68) !important;
 }
