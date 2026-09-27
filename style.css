@@ -3987,3 +3987,57 @@ color:#fff !important;
 #siteSearch .no-results {
     color: rgba(255, 255, 255, 0.68) !important;
 }
+/* ==========================================
+   COMPACT SEARCH — FINAL
+========================================== */
+
+#siteSearch .search-panel {
+    width: min(520px, calc(100% - 60px)) !important;
+    padding: 18px !important;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+/* Remove the "Search The Highest" heading */
+#siteSearch .search-panel h2 {
+    display: none !important;
+}
+
+/* Keep the search field as the main glass element */
+#siteSearch #siteSearchInput {
+    width: 100% !important;
+    height: 52px !important;
+    box-sizing: border-box !important;
+
+    padding: 0 18px !important;
+
+    background: rgba(48, 48, 48, 0.62) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 16px !important;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.20) !important;
+}
+
+#siteSearch #siteSearchInput::placeholder {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+#siteSearch #siteSearchInput:focus {
+    border-color: rgba(255, 255, 255, 0.30) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.20) !important;
+}
+
+/* Close button */
+#siteSearch .search-close {
+    color: #ffffff !important;
+    font-size: 25px !important;
+}
