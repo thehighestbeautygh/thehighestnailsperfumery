@@ -1,1 +1,628 @@
+/* THE HIGHEST — NEED A WEBSITE */
 
+/* ---------- FOUNDATION ---------- */
+
+:root {
+    --website-blue: #343b68;
+    --website-black: #111111;
+    --website-muted: #666666;
+    --website-line: rgba(17, 17, 17, 0.10);
+    --website-glass: rgba(82, 82, 88, 0.10);
+    --website-glass-border: rgba(17, 17, 17, 0.11);
+
+    --website-serif: "Cormorant Garamond", Georgia, serif;
+    --website-sans: "Montserrat", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--website-black);
+    font-family: var(--website-sans);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+    background: rgba(52, 59, 104, 0.15);
+}
+
+
+/* ---------- HEADER ---------- */
+
+.website-header {
+    width: 100%;
+    padding: 26px 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.website-logo {
+    font-family: var(--website-sans);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+}
+
+.back-home {
+    font-size: 0.60rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--website-muted);
+    transition: color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.back-home:hover {
+    color: var(--website-blue);
+    transform: translateX(-4px);
+}
+
+
+/* ---------- HERO ---------- */
+
+.website-hero {
+    min-height: 82vh;
+    padding: 8vh 8vw 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.website-hero::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    top: 8%;
+    right: -180px;
+    border-radius: 50%;
+    background: rgba(82, 82, 88, 0.08);
+    filter: blur(70px);
+    pointer-events: none;
+}
+
+.website-eyebrow,
+.small-label {
+    margin: 0 0 18px;
+    font-family: var(--website-sans);
+    font-size: 0.58rem;
+    font-weight: 600;
+    letter-spacing: 0.20em;
+    color: var(--website-blue);
+}
+
+.website-hero h1 {
+    max-width: 850px;
+    margin: 0;
+    font-family: var(--website-serif);
+    font-size: clamp(4rem, 8vw, 8rem);
+    font-weight: 400;
+    line-height: 0.91;
+    letter-spacing: -0.035em;
+}
+
+.website-hero h1 em {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.website-intro {
+    max-width: 540px;
+    margin: 38px 0 0;
+    font-size: 0.82rem;
+    line-height: 1.9;
+    color: var(--website-muted);
+}
+
+.website-scroll {
+    width: fit-content;
+    margin-top: 55px;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 0.60rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--website-black);
+    transition: gap 0.3s ease;
+}
+
+.website-scroll span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.website-scroll:hover {
+    gap: 22px;
+}
+
+
+/* ---------- INTRODUCTION ---------- */
+
+.website-intro-section {
+    padding: 12vh 8vw;
+    border-top: 1px solid var(--website-line);
+}
+
+.website-section-heading {
+    max-width: 680px;
+}
+
+.website-section-heading h2,
+.website-process-heading h2 {
+    margin: 0;
+    font-family: var(--website-serif);
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+}
+
+.website-section-heading h2 em,
+.website-process-heading h2 em {
+    font-style: italic;
+}
+
+.website-statement {
+    max-width: 760px;
+    margin: 70px 0 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.website-statement p {
+    margin: 0;
+    font-size: 0.78rem;
+    line-height: 1.9;
+    color: var(--website-muted);
+}
+
+.website-statement p:first-child {
+    font-family: var(--website-serif);
+    font-size: 1.45rem;
+    line-height: 1.25;
+    color: var(--website-black);
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 700px) {
+
+    .website-header {
+        padding: 22px 6vw;
+    }
+
+    .website-hero {
+        min-height: 78vh;
+        padding: 7vh 7vw 9vh;
+    }
+
+    .website-hero h1 {
+        font-size: clamp(3.4rem, 15vw, 5.5rem);
+    }
+
+    .website-intro {
+        max-width: 100%;
+        margin-top: 30px;
+        font-size: 0.74rem;
+        line-height: 1.8;
+    }
+
+    .website-scroll {
+        margin-top: 42px;
+    }
+
+    .website-intro-section {
+        padding: 10vh 7vw;
+    }
+
+    .website-section-heading h2,
+    .website-process-heading h2 {
+        font-size: clamp(2.7rem, 12vw, 4rem);
+    }
+
+    .website-statement {
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .website-statement p:first-child {
+        font-size: 1.35rem;
+    }
+}
+/* ---------- SERVICES ---------- */
+
+.website-services {
+    padding: 12vh 8vw;
+    border-top: 1px solid var(--website-line);
+}
+
+.website-services-list {
+    width: 100%;
+    margin-top: 75px;
+    border-top: 1px solid var(--website-line);
+}
+
+.website-service {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 35px;
+    padding: 42px 5px;
+    border-bottom: 1px solid var(--website-line);
+    transition: padding 0.35s ease,
+                background 0.35s ease;
+}
+
+.website-service:hover {
+    padding-left: 18px;
+    padding-right: 18px;
+    background: rgba(82, 82, 88, 0.035);
+}
+
+.service-number {
+    font-family: var(--website-serif);
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--website-blue);
+}
+
+.service-content {
+    max-width: 720px;
+}
+
+.service-label {
+    margin: 0 0 12px;
+    font-size: 0.55rem;
+    font-weight: 600;
+    letter-spacing: 0.17em;
+    color: var(--website-blue);
+}
+
+.service-content h3 {
+    margin: 0;
+    font-family: var(--website-serif);
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.service-content p:last-child {
+    max-width: 600px;
+    margin: 18px 0 0;
+    font-size: 0.75rem;
+    line-height: 1.85;
+    color: var(--website-muted);
+}
+
+
+/* ---------- PROCESS ---------- */
+
+.website-process {
+    padding: 12vh 8vw;
+    background: #fafafa;
+    border-top: 1px solid var(--website-line);
+}
+
+.website-process-heading {
+    max-width: 680px;
+}
+
+.website-process-grid {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.website-process-card {
+    min-height: 245px;
+    padding: 32px;
+    border: 1px solid var(--website-glass-border);
+    border-radius: 20px;
+    background: var(--website-glass);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.045);
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.website-process-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
+}
+
+.website-process-card span {
+    display: block;
+    margin-bottom: 45px;
+    font-family: var(--website-serif);
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--website-blue);
+}
+
+.website-process-card h3 {
+    margin: 0;
+    font-family: var(--website-serif);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.website-process-card p {
+    max-width: 430px;
+    margin: 13px 0 0;
+    font-size: 0.72rem;
+    line-height: 1.8;
+    color: var(--website-muted);
+}
+
+
+/* ---------- MOBILE SERVICES & PROCESS ---------- */
+
+@media (max-width: 700px) {
+
+    .website-services {
+        padding: 10vh 7vw;
+    }
+
+    .website-services-list {
+        margin-top: 52px;
+    }
+
+    .website-service {
+        grid-template-columns: 45px 1fr;
+        gap: 15px;
+        padding: 32px 2px;
+    }
+
+    .website-service:hover {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .service-number {
+        font-size: 1rem;
+    }
+
+    .service-content h3 {
+        font-size: 1.9rem;
+        line-height: 1.08;
+    }
+
+    .service-content p:last-child {
+        font-size: 0.69rem;
+        line-height: 1.8;
+    }
+
+    .website-process {
+        padding: 10vh 7vw;
+    }
+
+    .website-process-grid {
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .website-process-card {
+        min-height: auto;
+        padding: 28px;
+        border-radius: 17px;
+    }
+
+    .website-process-card span {
+        margin-bottom: 35px;
+    }
+
+    .website-process-card h3 {
+        font-size: 1.7rem;
+    }
+
+    .website-process-card p {
+        font-size: 0.69rem;
+    }
+}
+/* ---------- FINAL CTA ---------- */
+
+.website-cta {
+    padding: 13vh 8vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.website-cta::after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    bottom: -180px;
+    left: -130px;
+    border-radius: 50%;
+    background: rgba(52, 59, 104, 0.08);
+    filter: blur(70px);
+    pointer-events: none;
+}
+
+.website-cta-glass {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 75px 8vw;
+    text-align: center;
+    border: 1px solid var(--website-glass-border);
+    border-radius: 28px;
+    background: rgba(82, 82, 88, 0.09);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.06);
+}
+
+.website-cta-glass h2 {
+    margin: 0;
+    font-family: var(--website-serif);
+    font-size: clamp(3rem, 6vw, 6rem);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+}
+
+.website-cta-glass h2 em {
+    font-style: italic;
+}
+
+.website-cta-glass > p:not(.small-label) {
+    max-width: 560px;
+    margin: 28px auto 0;
+    font-size: 0.76rem;
+    line-height: 1.9;
+    color: var(--website-muted);
+}
+
+.website-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    padding: 15px 24px;
+    border: 1px solid var(--website-black);
+    border-radius: 999px;
+    background: var(--website-black);
+    color: #ffffff;
+    font-size: 0.60rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    transition: transform 0.3s ease,
+                background 0.3s ease,
+                color 0.3s ease;
+}
+
+.website-button:hover {
+    transform: translateY(-3px);
+    background: var(--website-blue);
+}
+
+.website-email {
+    display: block;
+    margin-top: 18px;
+    font-size: 0.58rem;
+    letter-spacing: 0.05em;
+    color: var(--website-muted);
+    overflow-wrap: anywhere;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.website-footer {
+    padding: 38px 5vw;
+    border-top: 1px solid var(--website-line);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
+    gap: 30px;
+}
+
+.footer-brand span {
+    display: block;
+    font-size: 0.63rem;
+    font-weight: 600;
+    letter-spacing: 0.20em;
+}
+
+.footer-brand p {
+    margin: 8px 0 0;
+    font-size: 0.58rem;
+    color: var(--website-muted);
+}
+
+.footer-home {
+    font-size: 0.58rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    transition: color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.footer-home:hover {
+    color: var(--website-blue);
+    transform: translateY(-2px);
+}
+
+.footer-copy {
+    margin: 0;
+    justify-self: end;
+    font-size: 0.52rem;
+    color: var(--website-muted);
+}
+
+
+/* ---------- MOBILE FINAL POLISH ---------- */
+
+@media (max-width: 700px) {
+
+    .website-cta {
+        padding: 10vh 7vw;
+    }
+
+    .website-cta-glass {
+        padding: 58px 24px;
+        border-radius: 21px;
+    }
+
+    .website-cta-glass h2 {
+        font-size: clamp(3rem, 14vw, 4.5rem);
+    }
+
+    .website-cta-glass > p:not(.small-label) {
+        font-size: 0.69rem;
+        line-height: 1.8;
+    }
+
+    .website-button {
+        width: 100%;
+        padding: 15px 18px;
+        font-size: 0.56rem;
+    }
+
+    .website-footer {
+        padding: 30px 7vw;
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 22px;
+    }
+
+    .footer-home {
+        justify-self: start;
+    }
+
+    .footer-copy {
+        justify-self: start;
+    }
+}
