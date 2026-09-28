@@ -971,3 +971,14 @@ a {
             38px 21px;
     }
 }
+/* VIDEO — FULL SQUARE COVER */
+.story-video {
+    overflow: hidden;
+}
+
+.story-video video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
