@@ -634,12 +634,6 @@ body.home-page .editorial-link{
     color:#111;
 }
 
-body.home-page .editorial-link::after{
-    content:"↗";
-    font-size:14px;
-    font-weight:400;
-}
-
 /* ---------- HOME SUPPORTING SECTIONS ---------- */
 
 body.home-page .home-feature-grid{
