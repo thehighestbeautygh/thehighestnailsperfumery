@@ -1,4 +1,4 @@
-alert("SCRIPT IS WORKING");
+
 // ==========================
 // THE HIGHEST
 // MAIN SCRIPT
