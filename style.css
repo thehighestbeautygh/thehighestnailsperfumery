@@ -2881,3 +2881,16 @@ body.home-page #heroDetail{
     font-weight:400 !important;
     letter-spacing:.02em;
 }
+/* =========================================
+   HERO CATEGORY — FINAL SIZE + TONE
+   ========================================= */
+
+body.home-page #heroCategory{
+    font-family:"Bodoni Moda", serif !important;
+    font-weight:400 !important;
+    font-size:clamp(2.5rem, 6vw, 4.5rem) !important;
+    line-height:1 !important;
+    letter-spacing:.07em !important;
+    text-transform:uppercase !important;
+    color:#555555 !important;
+}
