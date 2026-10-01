@@ -24,8 +24,6 @@ body{
 
 body.home-page.menu-open{
     overflow:hidden;
-}
-
 /* ---------- HOME HEADER ---------- */
 
 body.home-page > header{
@@ -70,6 +68,9 @@ body.home-page .header-actions{
     gap:18px;
 }
 
+
+/* ---------- HEADER ICONS ---------- */
+
 body.home-page .menu-btn,
 body.home-page .search-btn{
     width:20px;
@@ -78,37 +79,53 @@ body.home-page .search-btn{
     align-items:center;
     justify-content:center;
     padding:0;
+    margin:0;
     border:0;
     border-radius:0;
     background:transparent;
     color:#111;
     cursor:pointer;
+    text-decoration:none;
+    transition:opacity .2s ease;
 }
 
 body.home-page .menu-btn:hover,
 body.home-page .search-btn:hover{
     background:transparent;
     transform:none;
+    opacity:.6;
 }
 
+
+/* ---------- MENU MARK ---------- */
+
 body.home-page .menu-mark{
-    width:20px;
-    height:12px;
+    width:19px;
+    height:11px;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
 }
 
 body.home-page .menu-mark span{
-    width:20px;
-    height:1.3px;
+    width:19px;
+    height:1.2px;
     background:#111;
     display:block;
 }
 
+
+/* ---------- SEARCH + EMAIL SVGs ---------- */
+
 body.home-page .search-btn svg{
-    width:17px;
-    height:17px;
+    width:18px;
+    height:18px;
+    display:block;
+    fill:none;
+    stroke:#111;
+    stroke-width:1.3;
+    stroke-linecap:round;
+    stroke-linejoin:round;
 }
 
 /* ---------- HOME MENU ---------- */
