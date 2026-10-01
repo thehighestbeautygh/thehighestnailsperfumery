@@ -1,64 +1,68 @@
-// ==========================================
-// THE HIGHEST NAILS & PERFUMERY
-// FINAL WEBSITE JAVASCRIPT
-// ==========================================
-    // ==========================
-    // FIX HERO STRUCTURE
-    // ==========================
+// ==========================
+// THE HIGHEST — MAIN SCRIPT
+// ==========================
 
-    const hero = document.querySelector(".hero");
-    const heroContent = document.querySelector(".hero-content");
-    const quoteBox = document.querySelector(".quote-box");
-    const heroSlider = document.querySelector(".hero-slider");
-    const sliderDots = document.querySelector(".slider-dots");
 
-    if (hero && heroContent && quoteBox && heroSlider) {
+// ==========================
+// FIX HERO STRUCTURE
+// ==========================
 
-        // Rebuild the hero in the correct order
-        hero.appendChild(heroContent);
-        heroContent.appendChild(quoteBox);
-        hero.appendChild(heroSlider);
+const hero = document.querySelector(".hero");
+const heroContent = document.querySelector(".hero-content");
+const quoteBox = document.querySelector(".quote-box");
+const heroSlider = document.querySelector(".hero-slider");
+const sliderDots = document.querySelector(".slider-dots");
 
-        if (sliderDots) {
-            hero.appendChild(sliderDots);
-        }
+if (hero && heroContent && quoteBox && heroSlider) {
+    hero.appendChild(heroContent);
+    hero.appendChild(quoteBox);
+    hero.appendChild(heroSlider);
+
+    if (sliderDots) {
+        hero.appendChild(sliderDots);
     }
+}
+
+
+// ==========================
+// HERO QUOTES
+// ==========================
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    // ==========================
-    // HERO QUOTES
-    // ==========================
-
     const quotes = [
-        "Luxury is remembered long after the service is complete.",
-        "Confidence begins with beautiful self-care.",
-        "Beauty is an experience, not just a service.",
-        "Every appointment is a step towards elegance."
+        "Beauty should feel like you.",
+        "A little time for yourself goes a long way.",
+        "Good nails. Good lashes. Good scents.",
+        "Simple details can change the whole look.",
+        "Come as you are. Leave feeling good."
     ];
 
-    const quoteElement = document.querySelector(".quote-box #quoteText");
+    const quoteText = document.getElementById("quoteText");
 
-    let currentQuote = 0;
+    if (quoteText) {
 
-    if (quoteElement) {
-        quoteElement.textContent = quotes[currentQuote];
+        let quoteIndex = 0;
+
+        quoteText.textContent = quotes[quoteIndex];
 
         setInterval(() => {
-            currentQuote++;
 
-            if (currentQuote >= quotes.length) {
-                currentQuote = 0;
-            }
+            quoteIndex = (quoteIndex + 1) % quotes.length;
 
-            quoteElement.textContent = quotes[currentQuote];
+            quoteText.textContent = quotes[quoteIndex];
 
         }, 5000);
     }
 
+});
 
-    // ==========================
-    // SIDE MENU
-    // ==========================
+
+// ==========================
+// SIDE MENU
+// ==========================
+
+document.addEventListener("DOMContentLoaded", () => {
 
     const menuButton = document.getElementById("menuButton");
     const sideMenu = document.getElementById("sideMenu");
@@ -66,13 +70,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const overlay = document.getElementById("overlay");
 
     function openMenu() {
-        if (sideMenu) sideMenu.classList.add("active");
-        if (overlay) overlay.classList.add("active");
+
+        if (sideMenu) {
+            sideMenu.classList.add("active");
+        }
+
+        if (overlay) {
+            overlay.classList.add("active");
+        }
+
     }
 
     function closeSideMenu() {
-        if (sideMenu) sideMenu.classList.remove("active");
-        if (overlay) overlay.classList.remove("active");
+
+        if (sideMenu) {
+            sideMenu.classList.remove("active");
+        }
+
+        if (overlay) {
+            overlay.classList.remove("active");
+        }
+
     }
 
     if (menuButton) {
@@ -87,209 +105,223 @@ document.addEventListener("DOMContentLoaded", () => {
         overlay.addEventListener("click", closeSideMenu);
     }
 
+    if (sideMenu) {
 
-    // ==========================
-    // HERO IMAGE SLIDER
-    // ==========================
+        const menuLinks = sideMenu.querySelectorAll("a");
 
-    const slides = document.querySelectorAll(".hero-slider .slide");
-    const dots = document.querySelectorAll(".slider-dots .dot");
+        menuLinks.forEach(link => {
 
-    let slideIndex = 0;
+            link.addEventListener("click", closeSideMenu);
 
-    function showSlide(index) {
-
-        if (!slides.length) return;
-
-        slides.forEach(slide => {
-            slide.classList.remove("active");
         });
 
-        dots.forEach(dot => {
-            dot.classList.remove("active");
-        });
+    }
 
-        slides[index].classList.add("active");
+});
+// ==========================
+// HERO IMAGE SLIDER
+// ==========================
 
-        if (dots[index]) {
-            dots[index].classList.add("active");
+const slides = document.querySelectorAll(".hero-slider .slide");
+
+const heroCategory = document.getElementById("heroCategory");
+const heroDetail = document.getElementById("heroDetail");
+
+const heroContent = [
+    {
+        category: "Nails",
+        detail: "Acrylic · Gel polish · Stick-ons"
+    },
+    {
+        category: "Lashes",
+        detail: "Extensions · Strip lashes · Clusters"
+    },
+    {
+        category: "Perfumery",
+        detail: "Feminine · Masculine · Unisex"
+    }
+];
+
+let slideIndex = 0;
+
+function showSlide(index) {
+
+    if (!slides.length) return;
+
+    slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+    });
+
+    if (heroCategory && heroContent[index]) {
+        heroCategory.textContent = heroContent[index].category;
+    }
+
+    if (heroDetail && heroContent[index]) {
+        heroDetail.textContent = heroContent[index].detail;
+    }
+}
+
+function nextSlide() {
+
+    slideIndex = (slideIndex + 1) % slides.length;
+
+    showSlide(slideIndex);
+}
+
+showSlide(0);
+
+if (slides.length > 1) {
+    setInterval(nextSlide, 3000);
+}
+// ==========================
+// SEARCH FUNCTIONALITY
+// ==========================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const searchButton = document.getElementById("searchButton");
+    const searchOverlay = document.getElementById("searchOverlay");
+    const searchClose = document.getElementById("searchClose");
+    const searchInput = document.getElementById("searchInput");
+    const searchResults = document.getElementById("searchResults");
+
+    if (!searchButton || !searchOverlay) return;
+
+    const pages = [
+        {
+            name: "Home",
+            url: "index.html",
+            keywords: "home highest nails perfumery"
+        },
+        {
+            name: "Nails",
+            url: "nails.html",
+            keywords: "nails acrylic gel stick ons"
+        },
+        {
+            name: "Lashes",
+            url: "lashes.html",
+            keywords: "lashes extensions strips clusters"
+        },
+        {
+            name: "Perfumery",
+            url: "perfumery.html",
+            keywords: "perfume scents fragrance feminine masculine unisex"
+        },
+        {
+            name: "Reviews",
+            url: "reviews.html",
+            keywords: "reviews clients feedback"
+        },
+        {
+            name: "Process",
+            url: "process.html",
+            keywords: "process booking aftercare"
+        },
+        {
+            name: "About",
+            url: "about.html",
+            keywords: "about story highest"
+        },
+        {
+            name: "Visit",
+            url: "visit.html",
+            keywords: "visit location contact address"
+        },
+        {
+            name: "Need a Website",
+            url: "website.html",
+            keywords: "website developer design"
+        }
+    ];
+
+    function openSearch() {
+        searchOverlay.classList.add("active");
+
+        setTimeout(() => {
+            if (searchInput) {
+                searchInput.focus();
+            }
+        }, 100);
+    }
+
+    function closeSearch() {
+        searchOverlay.classList.remove("active");
+
+        if (searchInput) {
+            searchInput.value = "";
+        }
+
+        if (searchResults) {
+            searchResults.innerHTML = "";
         }
     }
 
-    function nextSlide() {
+    function performSearch() {
 
-        if (!slides.length) return;
+        if (!searchInput || !searchResults) return;
 
-        slideIndex++;
+        const query = searchInput.value.trim().toLowerCase();
 
-        if (slideIndex >= slides.length) {
-            slideIndex = 0;
+        searchResults.innerHTML = "";
+
+        if (!query) return;
+
+        const matches = pages.filter(page =>
+            `${page.name} ${page.keywords}`
+                .toLowerCase()
+                .includes(query)
+        );
+
+        if (!matches.length) {
+
+            searchResults.innerHTML = `
+                <p class="search-no-results">
+                    No results found.
+                </p>
+            `;
+
+            return;
         }
 
-        showSlide(slideIndex);
+        matches.forEach(page => {
+
+            const link = document.createElement("a");
+
+            link.href = page.url;
+            link.textContent = page.name;
+            link.className = "search-result-link";
+
+            searchResults.appendChild(link);
+
+        });
     }
 
-    dots.forEach((dot, index) => {
+    searchButton.addEventListener("click", openSearch);
 
-        dot.addEventListener("click", () => {
-            slideIndex = index;
-            showSlide(slideIndex);
-        });
+    if (searchClose) {
+        searchClose.addEventListener("click", closeSearch);
+    }
+
+    searchOverlay.addEventListener("click", event => {
+
+        if (event.target === searchOverlay) {
+            closeSearch();
+        }
 
     });
 
-    if (slides.length > 1) {
-        setInterval(nextSlide, 4000);
+    if (searchInput) {
+        searchInput.addEventListener("input", performSearch);
     }
 
+    document.addEventListener("keydown", event => {
 
-    // ==========================
-    // SEARCH
-    // ==========================
+        if (event.key === "Escape") {
+            closeSearch();
+        }
 
-    const searchButton = document.querySelector(".search-btn");
-
-    if (searchButton) {
-
-        searchButton.addEventListener("click", () => {
-
-            let searchOverlay = document.getElementById("siteSearch");
-
-            // Create search box if it doesn't exist
-            if (!searchOverlay) {
-
-                searchOverlay = document.createElement("div");
-
-                searchOverlay.id = "siteSearch";
-
-                searchOverlay.innerHTML = `
-                    <div class="search-panel">
-
-                        <button class="search-close" id="searchClose">
-                            ×
-                        </button>
-
-                        <h2>Search The Highest</h2>
-
-                        <input
-                            type="text"
-                            id="siteSearchInput"
-                            placeholder="Search nails, lashes, perfumes..."
-                            autocomplete="off"
-                        >
-
-                        <div id="searchResults"></div>
-
-                    </div>
-                `;
-
-                document.body.appendChild(searchOverlay);
-
-                const searchClose =
-                    document.getElementById("searchClose");
-
-                const searchInput =
-                    document.getElementById("siteSearchInput");
-
-                const searchResults =
-                    document.getElementById("searchResults");
-
-                searchClose.addEventListener("click", () => {
-                    searchOverlay.classList.remove("active");
-                });
-
-                searchOverlay.addEventListener("click", (event) => {
-
-                    if (event.target === searchOverlay) {
-                        searchOverlay.classList.remove("active");
-                    }
-
-                });
-
-                searchInput.addEventListener("input", () => {
-
-                    const searchTerm =
-                        searchInput.value.toLowerCase().trim();
-
-                    searchResults.innerHTML = "";
-
-                    if (!searchTerm) {
-                        return;
-                    }
-
-                    const searchableItems = [
-
-                        {
-                            name: "Nails",
-                            description: "Explore our nail services.",
-                            link: "nails.html"
-                        },
-
-                        {
-                            name: "Lashes",
-                            description: "Explore our lash services.",
-                            link: "lashes.html"
-                        },
-
-                        {
-                            name: "Perfumery",
-                            description: "Explore our fragrances and perfumes.",
-                            link: "perfumery.html"
-                        },
-
-                        {
-                            name: "Home",
-                            description: "Return to The Highest homepage.",
-                            link: "#hero"
-                        }
-
-                    ];
-
-                    const matches = searchableItems.filter(item =>
-                        item.name.toLowerCase().includes(searchTerm) ||
-                        item.description.toLowerCase().includes(searchTerm)
-                    );
-
-                    if (matches.length === 0) {
-
-                        searchResults.innerHTML =
-                            `<p class="no-results">No results found.</p>`;
-
-                        return;
-                    }
-
-                    matches.forEach(item => {
-
-                        const result = document.createElement("a");
-
-                        result.href = item.link;
-                        result.className = "search-result";
-
-                        result.innerHTML = `
-                            <strong>${item.name}</strong>
-                            <span>${item.description}</span>
-                        `;
-
-                        searchResults.appendChild(result);
-
-                    });
-
-                });
-
-            }
-
-            searchOverlay.classList.add("active");
-
-            const input =
-                document.getElementById("siteSearchInput");
-
-            if (input) {
-                setTimeout(() => input.focus(), 100);
-            }
-
-        });
-
-    }
+    });
 
 });
 
