@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* =====================================================
+    /* =========================
        MENU
-       ===================================================== */
+    ========================= */
 
     const menuButton = document.getElementById("menuButton");
     const sideMenu = document.getElementById("sideMenu");
@@ -32,11 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
+    /* =========================
        HERO SLIDER
-       ===================================================== */
+    ========================= */
 
     const slides = document.querySelectorAll(".hero-slider .slide");
+    const dots = document.querySelectorAll(".slider-dots .dot");
+
     const heroCategory = document.getElementById("heroCategory");
     const heroDetail = document.getElementById("heroDetail");
 
@@ -58,10 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
     let slideIndex = 0;
 
     function showSlide(index) {
+
         if (!slides.length) return;
 
         slides.forEach((slide, i) => {
             slide.classList.toggle("active", i === index);
+        });
+
+        dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
         });
 
         if (heroCategory && heroContent[index]) {
@@ -71,12 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (heroDetail && heroContent[index]) {
             heroDetail.textContent = heroContent[index].detail;
         }
-
-        const dots = document.querySelectorAll(".slider-dots .dot");
-
-        dots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === index);
-        });
     }
 
     function nextSlide() {
@@ -90,69 +91,83 @@ document.addEventListener("DOMContentLoaded", () => {
         setInterval(nextSlide, 3000);
     }
 
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            slideIndex = index;
+            showSlide(slideIndex);
+        });
+    });
 
-    /* =====================================================
+
+    /* =========================
        SEARCH
-       ===================================================== */
+    ========================= */
 
-    const searchButton = document.querySelector(".search-btn");
+    const searchButton = document.getElementById("searchButton");
     const searchOverlay = document.getElementById("siteSearch");
     const searchClose = document.getElementById("searchClose");
     const searchInput = document.getElementById("siteSearchInput");
     const searchResults = document.getElementById("searchResults");
 
-    let savedSearchScrollY = 0;
+    let savedScrollY = 0;
 
     function lockSearchScroll() {
-        savedSearchScrollY = window.scrollY;
+
+        savedScrollY = window.scrollY;
 
         document.body.style.position = "fixed";
-        document.body.style.top = `-${savedSearchScrollY}px`;
+        document.body.style.top = `-${savedScrollY}px`;
         document.body.style.left = "0";
         document.body.style.right = "0";
         document.body.style.width = "100%";
     }
 
     function unlockSearchScroll() {
+
         document.body.style.position = "";
         document.body.style.top = "";
         document.body.style.left = "";
         document.body.style.right = "";
         document.body.style.width = "";
 
-        window.scrollTo(0, savedSearchScrollY);
-    }
-
-    function closeSearch() {
-        if (!searchOverlay) return;
-
-        searchOverlay.classList.remove("active");
-        searchOverlay.setAttribute("aria-hidden", "true");
-
-        if (searchResults) {
-            searchResults.innerHTML = "";
-            searchResults.classList.remove("has-results");
-        }
-
-        if (searchInput) {
-            searchInput.value = "";
-        }
-
-        unlockSearchScroll();
+        window.scrollTo(0, savedScrollY);
     }
 
     function openSearch() {
-        if (!searchOverlay || !searchInput) return;
+
+        if (!searchOverlay) return;
 
         lockSearchScroll();
 
         searchOverlay.classList.add("active");
         searchOverlay.setAttribute("aria-hidden", "false");
 
-        setTimeout(() => {
-            searchInput.focus();
-        }, 100);
+        if (searchInput) {
+            setTimeout(() => {
+                searchInput.focus();
+            }, 100);
+        }
     }
+
+    function closeSearch() {
+
+        if (!searchOverlay) return;
+
+        searchOverlay.classList.remove("active");
+        searchOverlay.setAttribute("aria-hidden", "true");
+
+        if (searchInput) {
+            searchInput.value = "";
+        }
+
+        if (searchResults) {
+            searchResults.innerHTML = "";
+            searchResults.classList.remove("has-results");
+        }
+
+        unlockSearchScroll();
+    }
+
 
     if (searchButton) {
         searchButton.addEventListener("click", openSearch);
@@ -164,81 +179,98 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (searchOverlay) {
         searchOverlay.addEventListener("click", (event) => {
+
             if (event.target === searchOverlay) {
                 closeSearch();
             }
+
         });
     }
 
+
+    /* =========================
+       SEARCH RESULTS
+    ========================= */
+
     if (searchInput && searchResults) {
+
+        const searchableItems = [
+            {
+                name: "Nails",
+                description: "Explore our nail services.",
+                link: "nails.html"
+            },
+            {
+                name: "Lashes",
+                description: "Explore our lash services.",
+                link: "lashes.html"
+            },
+            {
+                name: "Perfumery",
+                description: "Explore our fragrances and perfumes.",
+                link: "perfumery.html"
+            },
+            {
+                name: "Reviews",
+                description: "Read client experiences.",
+                link: "reviews.html"
+            },
+            {
+                name: "Our Process",
+                description: "Booking, service and aftercare.",
+                link: "process.html"
+            },
+            {
+                name: "About Us",
+                description: "The story behind The Highest.",
+                link: "about.html"
+            },
+            {
+                name: "Visit Us",
+                description: "Location and contact details.",
+                link: "visit.html"
+            }
+        ];
+
 
         searchInput.addEventListener("input", () => {
 
-            const searchTerm = searchInput.value
-                .toLowerCase()
-                .trim();
+            const searchTerm =
+                searchInput.value.toLowerCase().trim();
 
             searchResults.innerHTML = "";
             searchResults.classList.remove("has-results");
 
-            /* Keep the search overlay empty until typing begins. */
             if (!searchTerm) {
                 return;
             }
 
-            const searchableItems = [
-                {
-                    name: "Nails",
-                    description: "Explore our nail services.",
-                    link: "nails.html"
-                },
-                {
-                    name: "Lashes",
-                    description: "Explore our lash services.",
-                    link: "lashes.html"
-                },
-                {
-                    name: "Perfumery",
-                    description: "Explore our fragrances and perfumes.",
-                    link: "perfumery.html"
-                },
-                {
-                    name: "Reviews",
-                    description: "Read client experiences.",
-                    link: "reviews.html"
-                },
-                {
-                    name: "Our Process",
-                    description: "Booking, service and aftercare.",
-                    link: "process.html"
-                },
-                {
-                    name: "About Us",
-                    description: "The story behind The Highest.",
-                    link: "about.html"
-                },
-                {
-                    name: "Visit Us",
-                    description: "Location and contact details.",
-                    link: "visit.html"
-                }
-            ];
 
-            const matches = searchableItems.filter(item =>
-                item.name.toLowerCase().includes(searchTerm) ||
-                item.description.toLowerCase().includes(searchTerm)
-            );
+            const matches = searchableItems.filter(item => {
+
+                return (
+                    item.name
+                        .toLowerCase()
+                        .includes(searchTerm) ||
+
+                    item.description
+                        .toLowerCase()
+                        .includes(searchTerm)
+                );
+
+            });
+
 
             if (!matches.length) {
 
-                searchResults.innerHTML = `
-                    <p class="no-results">No results found.</p>
-                `;
+                searchResults.innerHTML =
+                    `<p class="no-results">No results found.</p>`;
 
                 searchResults.classList.add("has-results");
 
                 return;
             }
+
 
             matches.forEach(item => {
 
@@ -253,16 +285,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
 
                 searchResults.appendChild(result);
+
             });
 
             searchResults.classList.add("has-results");
+
         });
+
     }
 
 
-    /* =====================================================
+    /* =========================
        ESCAPE KEY
-       ===================================================== */
+    ========================= */
 
     document.addEventListener("keydown", (event) => {
 
