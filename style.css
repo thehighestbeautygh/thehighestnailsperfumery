@@ -3919,3 +3919,42 @@ body.home-page .header-actions {
 body.home-page .logo {
     mix-blend-mode: normal;
 }
+/* =====================================================
+   HOME — OPENING HERO IMAGE
+   ===================================================== */
+
+body.home-page .hero-opening {
+    width: min(520px, 100%);
+    aspect-ratio: 4 / 5;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #f4f4f4;
+}
+
+body.home-page .hero-opening img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Keep the opening image controlled on desktop */
+@media (min-width: 901px) {
+    body.home-page .hero-opening {
+        width: min(520px, 46vw);
+        max-height: 620px;
+    }
+
+    body.home-page .hero-opening img {
+        max-height: 620px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    body.home-page .hero-opening {
+        width: min(430px, calc(100vw - 44px));
+        aspect-ratio: 4 / 5;
+    }
+}
