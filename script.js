@@ -19,9 +19,17 @@ document.addEventListener("DOMContentLoaded", () => {
         if (overlay) overlay.classList.remove("active");
     }
 
-    if (menuButton) menuButton.addEventListener("click", openMenu);
-    if (closeMenu) closeMenu.addEventListener("click", closeSideMenu);
-    if (overlay) overlay.addEventListener("click", closeSideMenu);
+    if (menuButton) {
+        menuButton.addEventListener("click", openMenu);
+    }
+
+    if (closeMenu) {
+        closeMenu.addEventListener("click", closeSideMenu);
+    }
+
+    if (overlay) {
+        overlay.addEventListener("click", closeSideMenu);
+    }
 
 
     /* =====================================================
@@ -173,10 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
             searchResults.innerHTML = "";
             searchResults.classList.remove("has-results");
 
-            /*
-             * Keep the search overlay clean.
-             * Nothing appears until the user actually types.
-             */
+            /* Keep the search overlay empty until typing begins. */
             if (!searchTerm) {
                 return;
             }
