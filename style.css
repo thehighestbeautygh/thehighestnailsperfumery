@@ -3148,3 +3148,60 @@ body.home-page .no-results{
     }
 
 }
+/* =====================================================
+   FINAL HERO TEXT — SMALL + TIGHT
+   ===================================================== */
+
+body.home-page .hero-content #heroCategory {
+    font-family: "Bodoni Moda", serif !important;
+    font-size: 2rem !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+
+    /* reduced letter spacing */
+    letter-spacing: .04em !important;
+
+    text-transform: uppercase !important;
+    color: #666 !important;
+
+    /* remove unnecessary spacing */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body.home-page .hero-content .hero-tag {
+    margin-bottom: 16px !important;
+    letter-spacing: .10em !important;
+}
+
+body.home-page .hero-content #heroDetail {
+    margin-top: 7px !important;
+    line-height: 1.4 !important;
+    letter-spacing: .04em !important;
+}
+
+/* Keep the entire text area compact */
+body.home-page .hero-content {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+
+    body.home-page .hero-content #heroCategory {
+        font-size: 1.55rem !important;
+        letter-spacing: .035em !important;
+        line-height: 1 !important;
+    }
+
+    body.home-page .hero-content .hero-tag {
+        margin-bottom: 13px !important;
+        letter-spacing: .09em !important;
+    }
+
+    body.home-page .hero-content #heroDetail {
+        margin-top: 6px !important;
+        line-height: 1.35 !important;
+        letter-spacing: .035em !important;
+    }
+}
