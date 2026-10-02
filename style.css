@@ -3205,3 +3205,23 @@ body.home-page .hero-content {
         letter-spacing: .035em !important;
     }
 }
+/* =====================================================
+   FINAL HERO SPACING — MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    body.home-page .hero {
+        padding-top: 34px !important;
+        padding-bottom: 26px !important;
+    }
+
+    body.home-page .hero-content .hero-tag {
+        margin-bottom: 11px !important;
+    }
+
+    body.home-page .hero-content #heroDetail {
+        margin-top: 5px !important;
+    }
+
+}
