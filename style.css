@@ -3958,3 +3958,161 @@ body.home-page .hero-opening img {
         aspect-ratio: 4 / 5;
     }
 }
+/* =====================================================
+   HOME — FINAL HERO + TEXT BRAND
+   ===================================================== */
+
+/* ---------- TEXT BRAND ---------- */
+
+body.home-page .brand {
+    text-decoration: none;
+    color: #111;
+    text-align: center;
+    line-height: 1;
+}
+
+body.home-page .brand-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+body.home-page .brand-name > span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+body.home-page .brand-name small {
+    font-family: "Montserrat", sans-serif;
+    font-size: 7px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+/* ---------- HERO ---------- */
+
+body.home-page .hero {
+    width: min(1280px, calc(100% - 64px));
+    margin: 0 auto;
+    padding: 42px 0 62px;
+    display: block;
+    background: #fff;
+}
+
+body.home-page .hero-media-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+body.home-page .hero-slider {
+    position: relative;
+    width: 100%;
+    height: min(76vh, 760px);
+    min-height: 520px;
+    aspect-ratio: auto;
+    overflow: hidden;
+    background: #f3f3f3;
+}
+
+body.home-page .slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .9s ease;
+}
+
+body.home-page .slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.home-page .slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+body.home-page .slide-caption {
+    position: absolute;
+    left: 28px;
+    bottom: 28px;
+    padding: 10px 15px;
+    background: rgba(255,255,255,.92);
+    font-family: "Montserrat", sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #111;
+}
+
+body.home-page .slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 18px 0 0;
+}
+
+body.home-page .dot {
+    width: 26px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    background: #c8c8c8;
+}
+
+body.home-page .dot.active {
+    width: 45px;
+    background: #111;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    body.home-page .brand-name > span {
+        font-size: 9px;
+        letter-spacing: 1.6px;
+    }
+
+    body.home-page .brand-name small {
+        font-size: 6px;
+        letter-spacing: 1.5px;
+    }
+
+    body.home-page .hero {
+        width: calc(100% - 32px);
+        padding: 28px 0 48px;
+    }
+
+    body.home-page .hero-slider {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 4 / 5;
+    }
+
+    body.home-page .slide-caption {
+        left: 16px;
+        bottom: 16px;
+        padding: 8px 12px;
+        font-size: 8px;
+        letter-spacing: 1.6px;
+    }
+
+    body.home-page .slider-dots {
+        margin-top: 14px;
+    }
+}
