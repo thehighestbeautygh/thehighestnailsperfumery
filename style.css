@@ -3625,3 +3625,297 @@ body.home-page .slider-dots {
         max-width:none;
     }
 }
+/* =========================================================
+   HOME — FINAL HEADER + OPENING IMAGE OVERRIDES
+   ========================================================= */
+
+/* ---------- HEADER: ALWAYS VISIBLE ---------- */
+
+body.home-page > header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+
+    min-height: 72px;
+    padding: 14px 28px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    transition:
+        background-color .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+/* Keep the page content from hiding underneath the fixed header */
+body.home-page {
+    padding-top: 72px;
+}
+
+
+/* ---------- LOGO ---------- */
+
+body.home-page .brand {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent !important;
+}
+
+body.home-page .logo {
+    display: block;
+
+    width: 56px;
+    height: auto;
+
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+
+    object-fit: contain;
+}
+
+
+/* ---------- HEADER BUTTONS ---------- */
+
+body.home-page .header-left,
+body.home-page .header-actions {
+    display: flex;
+    align-items: center;
+}
+
+body.home-page .header-left {
+    justify-self: start;
+}
+
+body.home-page .header-actions {
+    justify-self: end;
+    gap: 20px;
+}
+
+body.home-page .menu-btn,
+body.home-page .search-btn {
+    width: 22px;
+    height: 22px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+
+    border: 0;
+    border-radius: 0;
+
+    background: transparent !important;
+    color: #111;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body.home-page .menu-mark {
+    width: 20px;
+    height: 11px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body.home-page .menu-mark span {
+    display: block;
+
+    width: 20px;
+    height: 1.2px;
+
+    background: currentColor;
+}
+
+body.home-page .search-btn svg {
+    width: 19px;
+    height: 19px;
+
+    display: block;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.45;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* ---------- OPENING IMAGE ---------- */
+
+/*
+   The important part:
+   DO NOT use object-fit: cover here.
+
+   "contain" keeps the entire photograph visible
+   instead of chopping off the sides/top/bottom.
+*/
+
+body.home-page .home-opening {
+    position: relative;
+
+    width: 100%;
+    min-height: 0;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+    background: #f7f7f7;
+}
+
+body.home-page .home-opening-media {
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+body.home-page .home-opening-media img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: none;
+
+    object-fit: contain;
+    object-position: center center;
+}
+
+
+/* Don't let the old opening text sit over the photograph */
+body.home-page .home-opening-content {
+    display: none !important;
+}
+
+
+/* ---------- SECONDARY NAILS / LASHES / PERFUMERY SLIDER ---------- */
+
+body.home-page #hero {
+    position: relative;
+    z-index: 1;
+
+    margin-top: 0;
+}
+
+body.home-page .hero-media-wrap {
+    width: 100%;
+}
+
+
+/* Desktop: give the slider breathing room */
+@media (min-width: 769px) {
+
+    body.home-page .hero-slider {
+        width: min(1160px, calc(100% - 56px));
+        margin: 0 auto;
+    }
+
+}
+
+
+/* Mobile: let the slider touch both edges */
+@media (max-width: 768px) {
+
+    body.home-page > header {
+        min-height: 66px;
+        padding: 12px 20px;
+    }
+
+    body.home-page {
+        padding-top: 66px;
+    }
+
+    body.home-page .logo {
+        width: 50px;
+    }
+
+    body.home-page .header-actions {
+        gap: 15px;
+    }
+
+    body.home-page .menu-btn,
+    body.home-page .search-btn {
+        width: 21px;
+        height: 21px;
+    }
+
+    body.home-page .menu-mark {
+        width: 19px;
+        height: 10px;
+    }
+
+    body.home-page .menu-mark span {
+        width: 19px;
+    }
+
+    body.home-page .search-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    body.home-page .hero-slider {
+        width: 100%;
+        margin: 0;
+    }
+
+    body.home-page .hero-media-wrap {
+        width: 100%;
+    }
+}
+
+
+/* ---------- REMOVE OLD SCROLL-STATE BEHAVIOUR ---------- */
+
+/*
+   The header no longer disappears or changes position
+   after the opening section.
+*/
+
+body.home-page > header.is-scrolled {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+
+/* ---------- CLEAN LOGO AREA ---------- */
+
+body.home-page .brand,
+body.home-page .logo,
+body.home-page .header-left,
+body.home-page .header-actions {
+    background-color: transparent !important;
+}
+
+body.home-page .logo {
+    mix-blend-mode: normal;
+}
