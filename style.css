@@ -4116,3 +4116,29 @@ body.home-page .dot.active {
         margin-top: 14px;
     }
 }
+/* DESKTOP — FULL WIDTH HERO */
+
+@media (min-width: 901px) {
+    body.home-page .hero {
+        width: 100%;
+    }
+
+    body.home-page .hero-media-wrap {
+        width: 100%;
+    }
+
+    body.home-page .hero-slider {
+        width: 100%;
+    }
+}
+/* DESKTOP — DARK MENU TEXT */
+
+@media (min-width: 901px) {
+    body.home-page .side-menu a {
+        color: #111 !important;
+    }
+
+    body.home-page .side-menu a:hover {
+        color: #555 !important;
+    }
+}
