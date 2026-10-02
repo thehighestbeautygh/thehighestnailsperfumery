@@ -3101,3 +3101,50 @@ body.home-page .no-results{
         font-size:12px !important;
     }
 }
+/* =====================================================
+   HOMEPAGE — MOBILE HERO REFINEMENT
+   ===================================================== */
+
+@media (max-width: 600px){
+
+    body.home-page .hero-content{
+        padding: 34px 24px 22px !important;
+    }
+
+    body.home-page .hero-tag{
+        margin: 0 0 18px !important;
+        padding-left: 14px !important;
+        font-size: 10.5px !important;
+        letter-spacing: .14em !important;
+        line-height: 1.3 !important;
+    }
+
+    body.home-page .hero-tag::before{
+        height: 27px !important;
+    }
+
+    body.home-page #heroCategory{
+        margin: 0 !important;
+        font-family: "Bodoni Moda", serif !important;
+        font-size: 2.35rem !important;
+        font-weight: 400 !important;
+        line-height: .98 !important;
+        letter-spacing: .08em !important;
+        color: #666 !important;
+    }
+
+    body.home-page #heroDetail{
+        margin: 8px 0 0 !important;
+        font-family: "Montserrat", sans-serif !important;
+        font-size: 9.5px !important;
+        font-weight: 400 !important;
+        line-height: 1.5 !important;
+        letter-spacing: .055em !important;
+        color: #777 !important;
+    }
+
+    body.home-page .hero-media-wrap{
+        margin-top: 0 !important;
+    }
+
+}
