@@ -2230,36 +2230,30 @@ color:#fff !important;
 
 @media (min-width: 769px) {
 
-    .hero {
-        width: min(1100px, calc(100% - 60px)) !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+    body.home-page .hero {
+        width: 100% !important;
+        max-width: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
 
-        display: grid !important;
-        grid-template-columns: minmax(0, 1fr) 380px !important;
-
-        align-items: center !important;
-        justify-content: center !important;
-
-        gap: 70px !important;
+        display: block !important;
 
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
 
-    .hero-content {
+    body.home-page .hero-media-wrap {
         width: 100% !important;
-        max-width: 560px !important;
         margin: 0 !important;
     }
 
-    .hero-slider {
-        width: 380px !important;
-        height: 500px !important;
+    body.home-page .hero-slider {
+        width: 100% !important;
+        max-width: none !important;
+        height: min(76vh, 760px) !important;
+        min-height: 520px !important;
 
-        margin: 0 auto !important;
-
-        justify-self: center !important;
+        margin: 0 !important;
     }
 
 }
