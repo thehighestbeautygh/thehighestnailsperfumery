@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Highest Nails & Perfumery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="home-page">
+
+<header>
+
+    <div class="header-left">
+        <button id="menuButton" class="menu-btn" aria-label="Open menu" aria-expanded="false">
+            <span class="menu-mark" aria-hidden="true">
+                <span></span>
+                <span></span>
+            </span>
+        </button>
+    </div>
+
+    <a href="index.html" class="brand" aria-label="The Highest Nails & Perfumery home">
+        <img src="images/logo.png.PNG" alt="The Highest Nails & Perfumery" class="logo">
+    </a>
+
+    <div class="header-actions">
+
+        <button id="searchButton" class="search-btn" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="M20 20l-3.5-3.5"></path>
+            </svg>
+        </button>
+
+        <a class="search-btn" href="mailto:thehighestbeautygh@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="1"></rect>
+                <path d="m4 7 8 6 8-6"></path>
+            </svg>
+        </a>
+
+    </div>
+
+</header>
+
+<div id="overlay" class="overlay"></div>
+
+<nav id="sideMenu" class="side-menu" aria-label="Main navigation">
+
+    <button id="closeMenu" class="close-btn" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <path d="M5 5l14 14"></path>
+            <path d="M19 5L5 19"></path>
+        </svg>
+    </button>
+
+    <a href="index.html">Home</a>
+    <a href="nails.html">Nails</a>
+    <a href="lashes.html">Lashes</a>
+    <a href="perfumery.html">Perfumery</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="process.html">Our Process</a>
+    <a href="about.html">About Us</a>
+    <a href="visit.html">Visit Us</a>
+    <a href="website.html">Need a Website?</a>
+
+</nav>
+
+<div id="siteSearch" class="search-overlay" aria-hidden="true">
+
+    <div class="search-panel">
+
+        <button id="searchClose" class="search-close" aria-label="Close search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                <path d="M5 5l14 14"></path>
+                <path d="M19 5L5 19"></path>
+            </svg>
+        </button>
+
+        <h2>Search</h2>
+
+        <input id="siteSearchInput" type="search" placeholder="Search The Highest" autocomplete="off" aria-label="Search The Highest">
+
+        <div id="searchResults" aria-live="polite"></div>
+
+    </div>
+
+</div>
+
+<main>
+
+<section id="hero" class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-tag">The Highest Nails & Perfumery</span>
+
+        <div class="hero-message-box" aria-live="polite">
+            <h1 id="heroCategory">Nails</h1>
+            <p id="heroDetail">Acrylic · Gel polish · Stick-ons</p>
+
+        </div>
+
+    </div>
+
+    <div class="hero-media-wrap">
+
+        <div class="hero-slider" id="heroSlider">
+
+            <div class="slide active">
+                <img src="images/IMG_2906.jpeg" alt="Nail design and nail products">
+                <span class="slide-caption">Nails</span>
+            </div>
+
+            <div class="slide">
+                <img src="images/IMG_2935.jpeg" alt="Lash products and lash tools">
+                <span class="slide-caption">Lashes</span>
+            </div>
+
+            <div class="slide">
+                <img src="images/IMG_2932.jpeg" alt="Perfume bottles and fragrance products">
+                <span class="slide-caption">Perfumery</span>
+            </div>
+
+        </div>
+
+        <div class="slider-dots" aria-label="Hero slides">
+            <button class="dot active" type="button" aria-label="Show nails"></button>
+            <button class="dot" type="button" aria-label="Show lashes"></button>
+            <button class="dot" type="button" aria-label="Show perfumery"></button>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="section-divider"></div>
+
+<section class="home-intro">
+    <p class="home-eyebrow">What We Do</p>
+    <h2 class="editorial-heading">Beauty, simply.<br>All in one place.</h2>
+    <p>Nails, lashes and fragrances — with each part of the experience kept simple, personal and easy to explore.</p>
+</section>
+
+<section id="services" class="home-services">
+
+    <article class="category-feature">
+        <div class="category-image">
+            <img src="images/IMG_2946.JPG" alt="Nail products and nail tools">
+        </div>
+        <div class="category-info">
+            <span class="category-number">01 / NAILS</span>
+            <h3>Nails</h3>
+            <p>Acrylic, gel polish and stick-on nails, with options for different styles and occasions.</p>
+            <a class="editorial-link" href="nails.html">Explore Nails</a>
+        </div>
+    </article>
+
+    <article class="category-feature">
+        <div class="category-image">
+            <img src="images/IMG_2936.JPG" alt="Lash products and lash tools">
+        </div>
+        <div class="category-info">
+            <span class="category-number">02 / LASHES</span>
+            <h3>Lashes</h3>
+            <p>Extensions, strip lashes and clusters, with different looks to choose from.</p>
+            <a class="editorial-link" href="lashes.html">Explore Lashes</a>
+        </div>
+    </article>
+
+    <article class="category-feature">
+        <div class="category-image">
+            <img src="images/IMG_2934.JPG" alt="Perfume bottles and fragrance products">
+        </div>
+        <div class="category-info">
+            <span class="category-number">03 / PERFUMERY</span>
+            <h3>Perfumery</h3>
+            <p>Feminine, masculine and unisex fragrances, along with body splashes and scents for children.</p>
+            <a class="editorial-link" href="perfumery.html">Explore Perfumery</a>
+        </div>
+    </article>
+
+</section>
+
+<section class="home-feature-grid">
+
+    <article class="feature-block">
+        <p class="home-eyebrow">About</p>
+        <h3>Meet<br>The Highest.</h3>
+        <p>A closer look at the people, story and moments behind the brand.</p>
+        <a class="editorial-link" href="about.html">Our Story</a>
+    </article>
+
+    <article class="feature-block">
+        <p class="home-eyebrow">Process</p>
+        <h3>Before<br>you visit.</h3>
+        <p>See how bookings, services and aftercare work before your appointment.</p>
+        <a class="editorial-link" href="process.html">See The Process</a>
+    </article>
+
+    <article class="feature-block">
+        <p class="home-eyebrow">Reviews</p>
+        <h3>What<br>clients say.</h3>
+        <p>Read through the experiences shared on our reviews page.</p>
+        <a class="editorial-link" href="reviews.html">Read Reviews</a>
+    </article>
+
+</section>
+
+<section id="visit" class="home-visit">
+
+    <div>
+        <p class="home-eyebrow">Visit</p>
+        <h2>Come<br>see us.</h2>
+    </div>
+
+    <div class="visit-details">
+        <p><strong>Location</strong><br>Ablekuma Fan-Milk, near Al-Firdaws, Ghana</p>
+        <p><strong>Hours</strong><br>Monday – Saturday · 9:00 AM – 7:00 PM</p>
+        <a class="editorial-link" href="visit.html">Visit & Contact</a>
+    </div>
+
+</section>
+
+<section class="home-socials" aria-label="Social links">
+
+    <a href="https://www.google.com/search?q=The+Highest+Nails+%26+Perfumery" target="_blank" rel="noopener" aria-label="Google">
+        <i class="fab fa-google"></i>
+    </a>
+
+    <a href="mailto:thehighestbeautygh@gmail.com" aria-label="Email">
+        <i class="far fa-envelope"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@thehighestnails" target="_blank" rel="noopener" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+    </a>
+
+    <a href="https://wa.me/233594039815" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+</section>
+
+</main>
+
+<footer class="home-footer">
+
+    <div class="footer-main">
+
+        <div>
+            <h2 class="footer-brand">The Highest<br>Nails & Perfumery</h2>
+        </div>
+
+        <div>
+            <h4>Explore</h4>
+            <a href="nails.html">Nails</a>
+            <a href="lashes.html">Lashes</a>
+            <a href="perfumery.html">Perfumery</a>
+            <a href="reviews.html">Reviews</a>
+        </div>
+
+        <div>
+            <h4>Information</h4>
+            <a href="about.html">About Us</a>
+            <a href="process.html">Our Process</a>
+            <a href="visit.html">Visit Us</a>
+            <a href="website.html">Need a Website?</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 The Highest Nails & Perfumery. All Rights Reserved.</p>
+        <p>Accra, Ghana</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
