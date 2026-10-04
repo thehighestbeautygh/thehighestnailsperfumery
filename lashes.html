@@ -1,229 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+    <title>Lashes | The Highest Nails & Perfumery</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lashes.css">
 
-<title>Lashes | The Highest Nails & Perfumery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="style.css">  
-  <link rel="stylesheet" href="lashes.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="lashes-page">
 
-<header>
+<header class="lashes-header">
 
-<nav class="navbar">
+    <a href="index.html" class="lashes-brand" aria-label="The Highest Nails & Perfumery home">
+        <span>The Highest</span>
+        <small>Nails &amp; Perfumery</small>
+    </a>
 
-<div class="brand">
-
-<img src="images/logo.png.PNG" alt="The Highest Logo" class="logo">
-
-</div>
-
-<div class="nav-links">
-
-<a href="index.html" class="back-btn">
-← Back to Main Menu
-</a>
-
-</div>
-
-</nav>
+    <a href="index.html" class="back-home">Back to Home</a>
 
 </header>
 
 <main>
 
-<section class="lashes-hero">
+    <!-- HERO -->
 
-<div class="lashes-hero-content">
+    <section class="lashes-hero">
 
-<span class="page-tag" style="color:#e7a1b5;">
-★ LASHES
-</span>
+        <div class="hero-copy">
 
-<h1>
-Every Blink Speaks Confidence
-</h1>
+            <p class="eyebrow">LASHES</p>
 
-<p>
-Beautiful lashes are more than an accessory—they're the finishing touch that elevates every look with softness, elegance and confidence.
-</p>
+            <h1>
+                Which lashes<br>
+                should I get?
+            </h1>
 
-</div>
+            <p class="hero-intro">
+                Choose the amount, finish and lash type that best match the look you want.
+            </p>
 
-</section>
+        </div>
 
-<section class="lashes-section">
+    </section>
 
-<div class="section-title">
 
-<span class="section-icon" style="color:#e7a1b5;">★</span>
+    <!-- CHOOSER -->
 
-<h2>Signature Lash Experiences</h2>
+    <section class="lash-chooser" id="lashChooser">
 
-<p>
-Carefully selected lash styles designed to complement your natural beauty while giving you the confidence to stand out every day.
-</p>
+        <div class="section-heading">
 
-</div>
+            <span class="section-number">01</span>
 
-<div class="service-grid">
+            <div>
+                <p class="section-kicker">START HERE</p>
+                <h2>How much?</h2>
+            </div>
 
-<div class="service-card">
+        </div>
 
-<img src="images/IMG_2971.JPG" alt="Mink Lashes">
+        <div class="choice-grid length-grid">
 
-<h3>Mink Lashes</h3>
+            <button class="choice-card" type="button" data-group="length" data-value="Short">
+                <span class="choice-title">Short</span>
+                <span class="choice-description">Light and subtle.</span>
+            </button>
 
-<p>
-Soft, lightweight and luxurious lashes that create a naturally glamorous finish while remaining comfortable all day.
-</p>
+            <button class="choice-card" type="button" data-group="length" data-value="Medium">
+                <span class="choice-title">Medium</span>
+                <span class="choice-description">More definition without going too far.</span>
+            </button>
 
-<a href="https://wa.me/233594039815" class="lash-book-btn">
-Book Now
-</a>
+            <button class="choice-card" type="button" data-group="length" data-value="Full">
+                <span class="choice-title">Full</span>
+                <span class="choice-description">More volume and visibility.</span>
+            </button>
 
-</div>
+        </div>
 
-<div class="service-card">
 
-<img src="images/IMG_2972.JPG" alt="Cluster Lashes">
+        <div class="section-heading finish-heading">
 
-<h3>Cluster Lashes</h3>
+            <span class="section-number">02</span>
 
-<p>
-Customizable lash clusters perfect for achieving both everyday elegance and dramatic volume.
-</p>
+            <div>
+                <p class="section-kicker">CHOOSE A LOOK</p>
+                <h2>What finish?</h2>
+            </div>
 
-<a href="https://wa.me/233594039815" class="lash-book-btn">
-Book Now
-</a>
+        </div>
 
-</div>
+        <div class="choice-grid finish-grid">
 
-<div class="service-card">
+            <button class="choice-card" type="button" data-group="finish" data-value="Cat Eye">
+                <span class="choice-title">Cat Eye</span>
+                <span class="choice-description">Longer toward the outer corner.</span>
+            </button>
 
-<img src="images/IMG_2973.JPG" alt="Strip Lashes">
+            <button class="choice-card" type="button" data-group="finish" data-value="Wispy">
+                <span class="choice-title">Wispy</span>
+                <span class="choice-description">Soft, textured and varied.</span>
+            </button>
 
-<h3>Strip Lashes</h3>
+            <button class="choice-card" type="button" data-group="finish" data-value="Classic">
+                <span class="choice-title">Classic</span>
+                <span class="choice-description">Clean and defined.</span>
+            </button>
 
-<p>
-Easy-to-wear luxury strip lashes designed to instantly complete your makeup and enhance every occasion.
-</p>
+            <button class="choice-card" type="button" data-group="finish" data-value="Doll Eye">
+                <span class="choice-title">Doll Eye</span>
+                <span class="choice-description">More emphasis toward the centre.</span>
+            </button>
 
-<a href="https://wa.me/233594039815" class="lash-book-btn">
-Book Now
-</a>
+            <button class="choice-card" type="button" data-group="finish" data-value="Anime">
+                <span class="choice-title">Anime</span>
+                <span class="choice-description">Separated and more defined sections.</span>
+            </button>
 
-</div>
+            <button class="choice-card" type="button" data-group="finish" data-value="Volume">
+                <span class="choice-title">Volume</span>
+                <span class="choice-description">Fuller and denser.</span>
+            </button>
 
-</div>
+        </div>
 
-</section>
-<section class="lash-fun">
 
-<div class="fun-title">
+        <div class="section-heading type-heading">
 
-<span style="color:#e7a1b5;">
-★
-</span>
+            <span class="section-number">03</span>
 
-<h2>Lash Diaries</h2>
+            <div>
+                <p class="section-kicker">CHOOSE A TYPE</p>
+                <h2>What are you getting?</h2>
+            </div>
 
-</div>
+        </div>
 
-<div class="fun-grid">
+        <div class="type-grid">
 
-<div class="fun-card">
+            <article class="type-card">
 
-<p style="color:#e7a1b5;">
-★
-</p>
+                <div class="type-image">
+                    <img src="images/IMG_2971.JPG" alt="Mink lashes">
+                </div>
 
-<h3>
-What's in your mind? Me: Getting my lashes done! 😂
-</h3>
+                <div class="type-content">
+                    <p class="type-label">TYPE 01</p>
+                    <h3>Mink Lashes</h3>
+                    <p>
+                        A soft lash option for a lightweight, defined finish.
+                    </p>
 
-</div>
+                    <button
+                        class="type-select"
+                        type="button"
+                        data-group="type"
+                        data-value="Mink Lashes">
+                        Choose Mink
+                    </button>
+                </div>
 
-<div class="fun-card">
+            </article>
 
-<p style="color:#e7a1b5;">
-★
-</p>
 
-<h3>
-I'll always be a lipgloss and lashes girlie. 💗
-</h3>
+            <article class="type-card">
 
-</div>
+                <div class="type-image">
+                    <img src="images/IMG_2972.JPG" alt="Cluster lashes">
+                </div>
 
-<div class="fun-card">
+                <div class="type-content">
+                    <p class="type-label">TYPE 02</p>
+                    <h3>Cluster Lashes</h3>
+                    <p>
+                        Small lash sections that can be placed where needed.
+                    </p>
 
-<p style="color:#e7a1b5;">
-★
-</p>
+                    <button
+                        class="type-select"
+                        type="button"
+                        data-group="type"
+                        data-value="Cluster Lashes">
+                        Choose Cluster
+                    </button>
+                </div>
 
-<h3>
-Get your lashes done and suddenly the breakup doesn't trigger you that much. 😂
-</h3>
+            </article>
 
-</div>
 
-</div>
+            <article class="type-card">
 
-</section>
+                <div class="type-image">
+                    <img src="images/IMG_2973.JPG" alt="Strip lashes">
+                </div>
 
+                <div class="type-content">
+                    <p class="type-label">TYPE 03</p>
+                    <h3>Strip Lashes</h3>
+                    <p>
+                        A complete strip designed to sit along the lash line.
+                    </p>
 
+                    <button
+                        class="type-select"
+                        type="button"
+                        data-group="type"
+                        data-value="Strip Lashes">
+                        Choose Strip
+                    </button>
+                </div>
 
-<footer class="site-footer">
+            </article>
 
-<h2>
-The Highest Nails & Perfumery
-</h2>
+        </div>
 
-<p>
-Beauty, confidence and elegance in every detail.
-</p>
+    </section>
 
-<div class="footer-contact">
 
-<a href="https://wa.me/233594039815">
-WhatsApp: 0594039815
-</a>
+    <!-- REFERENCE NOTE -->
 
-<a href="#">
-TikTok
-</a>
+    <section class="reference-note">
 
-<a href="#">
-Instagram
-</a>
+        <div class="info-mark" aria-hidden="true">i</div>
 
-</div>
+        <div>
+            <p class="note-kicker">CUSTOMER PRIVACY</p>
 
-<p class="footer-copy">
-★ Crafted with love for every beauty lover.
-</p>
+            <h2>Looking for a reference?</h2>
 
-<p>
-© 2026 The Highest Nails & Perfumery. All Rights Reserved.
-</p>
+            <p>
+                We don't post customer lash photos without permission.
+                If you'd like to see reference photos before choosing a set,
+                send us a DM.
+            </p>
+        </div>
 
-</footer>
+    </section>
+
+
+    <!-- BEFORE BOOKING -->
+
+    <section class="before-booking">
+
+        <div class="section-heading centered-heading">
+
+            <span class="section-number">04</span>
+
+            <div>
+                <p class="section-kicker">BEFORE YOU BOOK</p>
+                <h2>Not sure what to choose?</h2>
+            </div>
+
+        </div>
+
+        <div class="booking-help">
+
+            <p>
+                You can send a reference photo or describe the look you're going for.
+                We'll help you choose a suitable finish and lash type.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOKING -->
+
+    <section class="lash-booking">
+
+        <p class="booking-kicker">READY WHEN YOU ARE</p>
+
+        <h2>Choose your set.</h2>
+
+        <p class="selection-status" id="selectionStatus">
+            Select a length, finish and type above.
+        </p>
+
+        <a
+            href="https://wa.me/233594039815"
+            class="final-book-btn"
+            id="lashBookingButton"
+            target="_blank"
+            rel="noopener">
+            Book on WhatsApp
+        </a>
+
+    </section>
+
 </main>
 
-<script src="script.js"></script>
+
+<footer class="lashes-footer">
+
+    <div class="footer-brand">
+        <span>The Highest</span>
+        <small>Nails &amp; Perfumery</small>
+    </div>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="mailto:thehighestbeautygh@gmail.com">Email</a>
+        <a href="https://wa.me/233594039815" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+
+    <p>
+        © 2026 The Highest Nails &amp; Perfumery.
+    </p>
+
+</footer>
+
+
+<script>
+(function () {
+
+    const selections = {
+        length: "",
+        finish: "",
+        type: ""
+    };
+
+    const buttons = document.querySelectorAll("[data-group]");
+    const status = document.getElementById("selectionStatus");
+    const bookingButton = document.getElementById("lashBookingButton");
+
+    function updateSelection(button) {
+
+        const group = button.dataset.group;
+        const value = button.dataset.value;
+
+        selections[group] = value;
+
+        document
+            .querySelectorAll('[data-group="' + group + '"]')
+            .forEach(function (item) {
+                item.classList.remove("selected");
+            });
+
+        button.classList.add("selected");
+
+        const chosen = [];
+
+        if (selections.length) {
+            chosen.push("Length: " + selections.length);
+        }
+
+        if (selections.finish) {
+            chosen.push("Finish: " + selections.finish);
+        }
+
+        if (selections.type) {
+            chosen.push("Type: " + selections.type);
+        }
+
+        if (chosen.length === 0) {
+            status.textContent = "Select a length, finish and type above.";
+        } else {
+            status.textContent = chosen.join("  ·  ");
+        }
+
+        const message =
+            "Hi, I'd like to book lashes.%0A%0A" +
+            "Length: " + (selections.length || "Not selected") + "%0A" +
+            "Finish: " + (selections.finish || "Not selected") + "%0A" +
+            "Type: " + (selections.type || "Not selected");
+
+        bookingButton.href =
+            "https://wa.me/233594039815?text=" + message;
+    }
+
+    buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            updateSelection(button);
+        });
+    });
+
+})();
+</script>
 
 </body>
-
 </html>
