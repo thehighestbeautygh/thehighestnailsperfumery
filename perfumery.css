@@ -1175,5 +1175,115 @@ body.popup-open {
     transition: none;
   }
 }
+/* =========================================================
+   PERFUME OPENING — LIGHT REVEAL OVERRIDE
+   ========================================================= */
+
+.opening-light-sweep {
+  position: absolute !important;
+  z-index: 5 !important;
+
+  top: -25% !important;
+  left: -35% !important;
+
+  width: 28% !important;
+  height: 150% !important;
+
+  transform: rotate(10deg);
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(235, 239, 243, 0.015) 20%,
+    rgba(235, 239, 243, 0.10) 38%,
+    rgba(248, 249, 250, 0.32) 50%,
+    rgba(225, 231, 236, 0.10) 63%,
+    rgba(220, 225, 230, 0.02) 80%,
+    transparent 100%
+  ) !important;
+
+  filter: blur(9px);
+  opacity: 0;
+
+  animation: perfumeLightSweep 7s cubic-bezier(.45, 0, .2, 1) infinite !important;
+}
+
+/* Brighter centre of the beam */
+.opening-light-sweep::after {
+  content: "" !important;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 36%;
+  width: 28%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.20),
+    rgba(245, 248, 250, 0.34),
+    rgba(255, 255, 255, 0.12),
+    transparent
+  ) !important;
+
+  filter: blur(7px);
+}
+
+/* Make sure the bottle remains below the light */
+.opening-bottle img {
+  position: relative;
+  z-index: 4 !important;
+}
+
+/* Keep the perfume name above the light */
+.bottle-label {
+  position: relative;
+  z-index: 7 !important;
+}
+
+/* Light sweeps ACROSS the perfume */
+@keyframes perfumeLightSweep {
+
+  0% {
+    left: -35%;
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0.12;
+  }
+
+  28% {
+    opacity: 0.42;
+  }
+
+  /* Beam reaches the bottle */
+  45% {
+    left: 38%;
+    opacity: 0.58;
+  }
+
+  52% {
+    left: 48%;
+    opacity: 0.52;
+  }
+
+  68% {
+    left: 105%;
+    opacity: 0.16;
+  }
+
+  82% {
+    left: 125%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 125%;
+    opacity: 0;
+  }
+}
 
 
