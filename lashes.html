@@ -12,25 +12,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="lashes-page">
 
 <header class="lashes-header">
 
-    <a href="index.html" class="lashes-brand" aria-label="The Highest Nails & Perfumery home">
+    <a
+        href="index.html"
+        class="lashes-brand"
+        aria-label="The Highest Nails & Perfumery home">
+
         <span>The Highest</span>
         <small>Nails &amp; Perfumery</small>
+
     </a>
 
-    <a href="index.html" class="back-home">Back to Home</a>
+    <a href="index.html" class="back-home">
+        Back to Home
+    </a>
 
 </header>
 
+
 <main>
 
-    <!-- HERO -->
+    <!-- =================================================
+         HERO
+         ================================================= -->
 
     <section class="lashes-hero">
 
@@ -44,7 +56,8 @@
             </h1>
 
             <p class="hero-intro">
-                Choose the amount, finish and lash type that best match the look you want.
+                Choose the amount, finish and lash type that best match
+                the look you want.
             </p>
 
         </div>
@@ -52,111 +65,300 @@
     </section>
 
 
-    <!-- CHOOSER -->
+    <!-- =================================================
+         LASH SELECTION
+         ================================================= -->
 
     <section class="lash-chooser" id="lashChooser">
+
+
+        <!-- CHOOSER INTRO -->
+
+        <div class="chooser-intro">
+
+            <p class="section-kicker">
+                CHOOSE YOUR SET
+            </p>
+
+            <h2>
+                Build your lash set.
+            </h2>
+
+            <p>
+                Tap one option from each section.
+                Your selections will be added to your booking message.
+            </p>
+
+            <div
+                class="selection-progress"
+                id="selectionProgress"
+                aria-live="polite">
+
+                <span>0</span> / 3 selected
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             LENGTH
+             ================================================= -->
 
         <div class="section-heading">
 
             <span class="section-number">01</span>
 
             <div>
-                <p class="section-kicker">START HERE</p>
-                <h2>How much?</h2>
+
+                <p class="section-kicker">
+                    HOW MUCH?
+                </p>
+
+                <h2>
+                    Choose one
+                </h2>
+
             </div>
 
         </div>
 
+
         <div class="choice-grid length-grid">
 
-            <button class="choice-card" type="button" data-group="length" data-value="Short">
-                <span class="choice-title">Short</span>
-                <span class="choice-description">Light and subtle.</span>
+            <button
+                class="choice-card"
+                type="button"
+                data-group="length"
+                data-value="Short">
+
+                <span class="choice-title">
+                    Short
+                </span>
+
+                <span class="choice-description">
+                    Light and subtle.
+                </span>
+
             </button>
 
-            <button class="choice-card" type="button" data-group="length" data-value="Medium">
-                <span class="choice-title">Medium</span>
-                <span class="choice-description">More definition without going too far.</span>
+
+            <button
+                class="choice-card"
+                type="button"
+                data-group="length"
+                data-value="Medium">
+
+                <span class="choice-title">
+                    Medium
+                </span>
+
+                <span class="choice-description">
+                    More definition without going too far.
+                </span>
+
             </button>
 
-            <button class="choice-card" type="button" data-group="length" data-value="Full">
-                <span class="choice-title">Full</span>
-                <span class="choice-description">More volume and visibility.</span>
+
+            <button
+                class="choice-card"
+                type="button"
+                data-group="length"
+                data-value="Full">
+
+                <span class="choice-title">
+                    Full
+                </span>
+
+                <span class="choice-description">
+                    More volume and visibility.
+                </span>
+
             </button>
 
         </div>
 
+
+        <!-- =================================================
+             FINISH
+             ================================================= -->
 
         <div class="section-heading finish-heading">
 
             <span class="section-number">02</span>
 
             <div>
-                <p class="section-kicker">CHOOSE A LOOK</p>
-                <h2>What finish?</h2>
+
+                <p class="section-kicker">
+                    WHAT FINISH?
+                </p>
+
+                <h2>
+                    Choose one
+                </h2>
+
             </div>
 
         </div>
 
+
         <div class="choice-grid finish-grid">
 
-            <button class="choice-card" type="button" data-group="finish" data-value="Cat Eye">
-                <span class="choice-title">Cat Eye</span>
-                <span class="choice-description">Longer toward the outer corner.</span>
+            <button
+                class="choice-card"
+                type="button"
+                data-group="finish"
+                data-value="Cat Eye">
+
+                <span class="choice-title">
+                    Cat Eye
+                </span>
+
+                <span class="choice-description">
+                    Longer toward the outer corner.
+                </span>
+
             </button>
 
-            <button class="choice-card" type="button" data-group="finish" data-value="Wispy">
-                <span class="choice-title">Wispy</span>
-                <span class="choice-description">Soft, textured and varied.</span>
+
+            <button
+                class="choice-card"
+                type="button"
+                data-group="finish"
+                data-value="Wispy">
+
+                <span class="choice-title">
+                    Wispy
+                </span>
+
+                <span class="choice-description">
+                    Soft, textured and varied.
+                </span>
+
             </button>
 
-            <button class="choice-card" type="button" data-group="finish" data-value="Classic">
-                <span class="choice-title">Classic</span>
-                <span class="choice-description">Clean and defined.</span>
+
+            <button
+                class="choice-card"
+                type="button"
+                data-group="finish"
+                data-value="Classic">
+
+                <span class="choice-title">
+                    Classic
+                </span>
+
+                <span class="choice-description">
+                    Clean and defined.
+                </span>
+
             </button>
 
-            <button class="choice-card" type="button" data-group="finish" data-value="Doll Eye">
-                <span class="choice-title">Doll Eye</span>
-                <span class="choice-description">More emphasis toward the centre.</span>
+
+            <button
+                class="choice-card"
+                type="button"
+                data-group="finish"
+                data-value="Doll Eye">
+
+                <span class="choice-title">
+                    Doll Eye
+                </span>
+
+                <span class="choice-description">
+                    More emphasis toward the centre.
+                </span>
+
             </button>
 
-            <button class="choice-card" type="button" data-group="finish" data-value="Anime">
-                <span class="choice-title">Anime</span>
-                <span class="choice-description">Separated and more defined sections.</span>
+
+            <button
+                class="choice-card"
+                type="button"
+                data-group="finish"
+                data-value="Anime">
+
+                <span class="choice-title">
+                    Anime
+                </span>
+
+                <span class="choice-description">
+                    Separated and more defined sections.
+                </span>
+
             </button>
 
-            <button class="choice-card" type="button" data-group="finish" data-value="Volume">
-                <span class="choice-title">Volume</span>
-                <span class="choice-description">Fuller and denser.</span>
+
+            <button
+                class="choice-card"
+                type="button"
+                data-group="finish"
+                data-value="Volume">
+
+                <span class="choice-title">
+                    Volume
+                </span>
+
+                <span class="choice-description">
+                    Fuller and denser.
+                </span>
+
             </button>
 
         </div>
 
+
+        <!-- =================================================
+             LASH TYPE
+             ================================================= -->
 
         <div class="section-heading type-heading">
 
             <span class="section-number">03</span>
 
             <div>
-                <p class="section-kicker">CHOOSE A TYPE</p>
-                <h2>What are you getting?</h2>
+
+                <p class="section-kicker">
+                    WHAT TYPE?
+                </p>
+
+                <h2>
+                    Choose one
+                </h2>
+
             </div>
 
         </div>
 
+
         <div class="type-grid">
+
+
+            <!-- MINK -->
 
             <article class="type-card">
 
                 <div class="type-image">
-                    <img src="images/IMG_2971.JPG" alt="Mink lashes">
+
+                    <img
+                        src="images/IMG_2971.JPG"
+                        alt="Mink lashes">
+
                 </div>
 
                 <div class="type-content">
-                    <p class="type-label">TYPE 01</p>
-                    <h3>Mink Lashes</h3>
+
+                    <p class="type-label">
+                        TYPE 01
+                    </p>
+
+                    <h3>
+                        Mink Lashes
+                    </h3>
+
                     <p>
-                        A soft lash option for a lightweight, defined finish.
+                        A soft lash option for a lightweight,
+                        defined finish.
                     </p>
 
                     <button
@@ -164,24 +366,41 @@
                         type="button"
                         data-group="type"
                         data-value="Mink Lashes">
+
                         Choose Mink
+
                     </button>
+
                 </div>
 
             </article>
 
 
+            <!-- CLUSTER -->
+
             <article class="type-card">
 
                 <div class="type-image">
-                    <img src="images/IMG_2972.JPG" alt="Cluster lashes">
+
+                    <img
+                        src="images/IMG_2972.JPG"
+                        alt="Cluster lashes">
+
                 </div>
 
                 <div class="type-content">
-                    <p class="type-label">TYPE 02</p>
-                    <h3>Cluster Lashes</h3>
+
+                    <p class="type-label">
+                        TYPE 02
+                    </p>
+
+                    <h3>
+                        Cluster Lashes
+                    </h3>
+
                     <p>
-                        Small lash sections that can be placed where needed.
+                        Small lash sections that can be placed
+                        where needed.
                     </p>
 
                     <button
@@ -189,24 +408,41 @@
                         type="button"
                         data-group="type"
                         data-value="Cluster Lashes">
+
                         Choose Cluster
+
                     </button>
+
                 </div>
 
             </article>
 
 
+            <!-- STRIP -->
+
             <article class="type-card">
 
                 <div class="type-image">
-                    <img src="images/IMG_2973.JPG" alt="Strip lashes">
+
+                    <img
+                        src="images/IMG_2973.JPG"
+                        alt="Strip lashes">
+
                 </div>
 
                 <div class="type-content">
-                    <p class="type-label">TYPE 03</p>
-                    <h3>Strip Lashes</h3>
+
+                    <p class="type-label">
+                        TYPE 03
+                    </p>
+
+                    <h3>
+                        Strip Lashes
+                    </h3>
+
                     <p>
-                        A complete strip designed to sit along the lash line.
+                        A complete strip designed to sit
+                        along the lash line.
                     </p>
 
                     <button
@@ -214,8 +450,11 @@
                         type="button"
                         data-group="type"
                         data-value="Strip Lashes">
+
                         Choose Strip
+
                     </button>
+
                 </div>
 
             </article>
@@ -225,47 +464,72 @@
     </section>
 
 
-    <!-- REFERENCE NOTE -->
+    <!-- =================================================
+         PRIVACY / REFERENCE NOTE
+         ================================================= -->
 
     <section class="reference-note">
 
-        <div class="info-mark" aria-hidden="true">i</div>
+        <div
+            class="info-mark"
+            aria-hidden="true">
+            i
+        </div>
 
         <div>
-            <p class="note-kicker">CUSTOMER PRIVACY</p>
 
-            <h2>Looking for a reference?</h2>
+            <p class="note-kicker">
+                CUSTOMER PRIVACY
+            </p>
+
+            <h2>
+                Looking for a reference?
+            </h2>
 
             <p>
                 We don't post customer lash photos without permission.
-                If you'd like to see reference photos before choosing a set,
-                send us a DM.
+                If you'd like to see reference photos before choosing
+                a set, send us a DM.
             </p>
+
         </div>
 
     </section>
 
 
-    <!-- BEFORE BOOKING -->
+    <!-- =================================================
+         BEFORE BOOKING
+         ================================================= -->
 
     <section class="before-booking">
 
         <div class="section-heading centered-heading">
 
-            <span class="section-number">04</span>
+            <span class="section-number">
+                04
+            </span>
 
             <div>
-                <p class="section-kicker">BEFORE YOU BOOK</p>
-                <h2>Not sure what to choose?</h2>
+
+                <p class="section-kicker">
+                    BEFORE YOU BOOK
+                </p>
+
+                <h2>
+                    Not sure what to choose?
+                </h2>
+
             </div>
 
         </div>
 
+
         <div class="booking-help">
 
             <p>
-                You can send a reference photo or describe the look you're going for.
-                We'll help you choose a suitable finish and lash type.
+                You can send a reference photo or describe
+                the look you're going for. We'll help you choose
+                a suitable finish and lash type.
             </p>
 
         </div>
@@ -273,44 +537,104 @@
     </section>
 
 
-    <!-- BOOKING -->
+    <!-- =================================================
+         FINAL BOOKING
+         ================================================= -->
 
     <section class="lash-booking">
 
-        <p class="booking-kicker">READY WHEN YOU ARE</p>
-
-        <h2>Choose your set.</h2>
-
-        <p class="selection-status" id="selectionStatus">
-            Select a length, finish and type above.
+        <p class="booking-kicker">
+            YOUR SELECTION
         </p>
 
-        <a
-            href="https://wa.me/233594039815"
+        <h2>
+            Ready to book?
+        </h2>
+
+        <p
+            class="selection-status"
+            id="selectionStatus"
+            aria-live="polite">
+
+            Select one option from each section to continue.
+
+        </p>
+
+
+        <div
+            class="selection-summary"
+            id="selectionSummary">
+
+            <span>
+                Length: —
+            </span>
+
+            <span>
+                Finish: —
+            </span>
+
+            <span>
+                Type: —
+            </span>
+
+        </div>
+
+
+        <button
+            type="button"
             class="final-book-btn"
             id="lashBookingButton"
-            target="_blank"
-            rel="noopener">
-            Book on WhatsApp
-        </a>
+            disabled>
+
+            Complete your selection
+
+        </button>
 
     </section>
 
 </main>
 
 
+<!-- =================================================
+     FOOTER
+     ================================================= -->
+
 <footer class="lashes-footer">
 
     <div class="footer-brand">
-        <span>The Highest</span>
-        <small>Nails &amp; Perfumery</small>
+
+        <span>
+            The Highest
+        </span>
+
+        <small>
+            Nails &amp; Perfumery
+        </small>
+
     </div>
 
+
     <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="mailto:thehighestbeautygh@gmail.com">Email</a>
-        <a href="https://wa.me/233594039815" target="_blank" rel="noopener">WhatsApp</a>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="mailto:thehighestbeautygh@gmail.com">
+            Email
+        </a>
+
+        <a
+            href="https://wa.me/233594039815"
+            target="_blank"
+            rel="noopener">
+
+            WhatsApp
+
+        </a>
+
     </div>
+
 
     <p>
         © 2026 The Highest Nails &amp; Perfumery.
@@ -318,6 +642,10 @@
 
 </footer>
 
+
+<!-- =================================================
+     LASH BOOKING LOGIC
+     ================================================= -->
 
 <script>
 (function () {
@@ -330,7 +658,10 @@
 
     const buttons = document.querySelectorAll("[data-group]");
     const status = document.getElementById("selectionStatus");
+    const progress = document.getElementById("selectionProgress");
     const bookingButton = document.getElementById("lashBookingButton");
+    const summary = document.getElementById("selectionSummary");
+
 
     function updateSelection(button) {
 
@@ -339,52 +670,126 @@
 
         selections[group] = value;
 
+
         document
             .querySelectorAll('[data-group="' + group + '"]')
             .forEach(function (item) {
+
                 item.classList.remove("selected");
+
             });
+
 
         button.classList.add("selected");
 
-        const chosen = [];
 
-        if (selections.length) {
-            chosen.push("Length: " + selections.length);
-        }
+        const selectedCount =
+            Number(Boolean(selections.length)) +
+            Number(Boolean(selections.finish)) +
+            Number(Boolean(selections.type));
 
-        if (selections.finish) {
-            chosen.push("Finish: " + selections.finish);
-        }
 
-        if (selections.type) {
-            chosen.push("Type: " + selections.type);
-        }
+        progress.innerHTML =
+            "<span>" +
+            selectedCount +
+            "</span> / 3 selected";
 
-        if (chosen.length === 0) {
-            status.textContent = "Select a length, finish and type above.";
+
+        summary.innerHTML =
+            "<span>Length: " +
+            (selections.length || "—") +
+            "</span>" +
+
+            "<span>Finish: " +
+            (selections.finish || "—") +
+            "</span>" +
+
+            "<span>Type: " +
+            (selections.type || "—") +
+            "</span>";
+
+
+        if (selectedCount < 3) {
+
+            const remaining = 3 - selectedCount;
+
+            status.textContent =
+                remaining === 1
+                    ? "Choose one more option to continue."
+                    : "Choose one option from each section to continue.";
+
+
+            bookingButton.disabled = true;
+
+            bookingButton.textContent =
+                "Complete your selection";
+
         } else {
-            status.textContent = chosen.join("  ·  ");
+
+            status.textContent =
+                "Your selections are ready. Continue to WhatsApp to book.";
+
+            bookingButton.disabled = false;
+
+            bookingButton.textContent =
+                "Book on WhatsApp";
         }
+
+    }
+
+
+    buttons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            updateSelection(button);
+
+        });
+
+    });
+
+
+    bookingButton.addEventListener("click", function () {
+
+        if (
+            !selections.length ||
+            !selections.finish ||
+            !selections.type
+        ) {
+
+            status.textContent =
+                "Please choose one option from each section first.";
+
+            return;
+        }
+
 
         const message =
             "Hi, I'd like to book lashes.%0A%0A" +
-            "Length: " + (selections.length || "Not selected") + "%0A" +
-            "Finish: " + (selections.finish || "Not selected") + "%0A" +
-            "Type: " + (selections.type || "Not selected");
 
-        bookingButton.href =
-            "https://wa.me/233594039815?text=" + message;
-    }
+            "Length: " +
+            selections.length +
+            "%0A" +
 
-    buttons.forEach(function (button) {
-        button.addEventListener("click", function () {
-            updateSelection(button);
-        });
+            "Finish: " +
+            selections.finish +
+            "%0A" +
+
+            "Type: " +
+            selections.type;
+
+
+        window.open(
+            "https://wa.me/233594039815?text=" + message,
+            "_blank",
+            "noopener"
+        );
+
     });
 
 })();
 </script>
+
 
 </body>
 </html>
