@@ -1,0 +1,634 @@
+/* =====================================================
+   NAILS PAGE
+   Separate page stylesheet
+   ===================================================== */
+
+.nails-page {
+    --nails-accent: #5b7bbf;
+    --nails-accent-dark: #3f5d9a;
+    --nails-ink: #111111;
+    --nails-muted: #666666;
+    --nails-line: #dddddd;
+    --nails-soft: #f7f8fb;
+
+    background: #ffffff;
+    color: var(--nails-ink);
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.nails-page .nails-header {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    border-bottom: 1px solid var(--nails-line);
+}
+
+.nails-page .nails-brand {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+
+    color: var(--nails-ink);
+    text-decoration: none;
+    line-height: 1;
+}
+
+.nails-page .nails-brand span {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+}
+
+.nails-page .nails-brand small {
+    color: #777777;
+    font-size: 7px;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.nails-page .back-home {
+    color: var(--nails-ink);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .8px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nails-page .back-home:hover {
+    color: var(--nails-accent);
+}
+
+
+/* ---------- SHARED SECTION ---------- */
+
+.nails-page .nails-section {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 86px 0;
+}
+
+.nails-page .section-heading {
+    max-width: 620px;
+    margin: 0 auto 46px;
+    text-align: center;
+}
+
+.nails-page .eyebrow {
+    margin: 0 0 12px;
+
+    color: var(--nails-accent);
+
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.nails-page .section-heading h2 {
+    margin: 0 0 12px;
+
+    color: var(--nails-ink);
+
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(25px, 3vw, 36px);
+    font-weight: 600;
+    letter-spacing: -.5px;
+}
+
+.nails-page .section-heading p:last-child {
+    margin: 0;
+
+    color: var(--nails-muted);
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* ---------- INTRO ---------- */
+
+.nails-page .nails-intro {
+    width: min(900px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 100px 0 86px;
+
+    text-align: center;
+}
+
+.nails-page .nails-intro h1 {
+    margin: 0 0 16px;
+
+    color: var(--nails-ink);
+
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(34px, 6vw, 64px);
+    font-weight: 600;
+    letter-spacing: -1.8px;
+}
+
+.nails-page .intro-copy {
+    max-width: 500px;
+    margin: 0 auto;
+
+    color: var(--nails-muted);
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ---------- SERVICES ---------- */
+
+.nails-page .services-section {
+    padding-top: 70px;
+    border-top: 1px solid var(--nails-line);
+}
+
+.nails-page .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.nails-page .service-card {
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid var(--nails-line);
+}
+
+.nails-page .service-card img {
+    display: block;
+
+    width: 100%;
+    height: 330px;
+
+    object-fit: cover;
+}
+
+.nails-page .service-card .card-copy {
+    padding: 24px 24px 26px;
+}
+
+.nails-page .service-card h3 {
+    margin: 0 0 9px;
+
+    color: var(--nails-ink);
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nails-page .service-card p {
+    min-height: 48px;
+    margin: 0 0 20px;
+
+    color: var(--nails-muted);
+
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.nails-page .text-button {
+    display: inline-block;
+
+    color: var(--nails-accent-dark);
+
+    border-bottom: 1px solid var(--nails-accent);
+
+    padding-bottom: 3px;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nails-page .text-button:hover {
+    color: var(--nails-accent);
+}
+
+
+/* ---------- MOODS ---------- */
+
+.nails-page .mood-section {
+    border-top: 1px solid var(--nails-line);
+}
+
+.nails-page .mood-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.nails-page .mood-card {
+    min-width: 0;
+}
+
+.nails-page .mood-card img {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    background: var(--nails-soft);
+}
+
+.nails-page .mood-card > div {
+    padding: 17px 2px 0;
+}
+
+.nails-page .mood-card h3 {
+    margin: 0 0 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nails-page .mood-card p {
+    margin: 0;
+
+    color: var(--nails-muted);
+
+    font-size: 11px;
+    line-height: 1.65;
+}
+
+
+/* ---------- SHAPES ---------- */
+
+.nails-page .shape-section {
+    border-top: 1px solid var(--nails-line);
+}
+
+.nails-page .shape-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.nails-page .shape-card {
+    min-width: 0;
+
+    border: 1px solid var(--nails-line);
+    background: #ffffff;
+}
+
+.nails-page .shape-card video,
+.nails-page .shape-card img {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    background: var(--nails-soft);
+}
+
+.nails-page .shape-card h3 {
+    margin: 0;
+    padding: 14px 12px 16px;
+
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* ---------- RELATABLE ---------- */
+
+.nails-page .relatable-section {
+    border-top: 1px solid var(--nails-line);
+}
+
+.nails-page .relatable-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.nails-page .relatable-card {
+    min-height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 28px;
+
+    border: 1px solid var(--nails-line);
+    background: var(--nails-soft);
+
+    text-align: center;
+}
+
+.nails-page .relatable-card p {
+    max-width: 280px;
+    margin: 0;
+
+    color: #303030;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* ---------- HIDEOUT ---------- */
+
+.nails-page .hideout-section {
+    border-top: 1px solid var(--nails-line);
+}
+
+.nails-page .hideout {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.nails-page .hideout > h2 {
+    margin: 0 0 9px;
+
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nails-page .hideout > p:not(.eyebrow) {
+    margin: 0 0 25px;
+
+    color: var(--nails-muted);
+
+    font-size: 12px;
+}
+
+.nails-page .hideout details {
+    border-top: 1px solid var(--nails-line);
+}
+
+.nails-page .hideout details:last-child {
+    border-bottom: 1px solid var(--nails-line);
+}
+
+.nails-page .hideout summary {
+    cursor: pointer;
+    list-style: none;
+
+    padding: 19px 0;
+
+    color: var(--nails-ink);
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nails-page .hideout summary::-webkit-details-marker {
+    display: none;
+}
+
+.nails-page .hideout summary::after {
+    content: "+";
+
+    float: right;
+
+    color: var(--nails-accent);
+
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.nails-page .hideout details[open] summary::after {
+    content: "−";
+}
+
+.nails-page .hideout details p {
+    max-width: 680px;
+    margin: -2px 0 19px;
+
+    color: var(--nails-muted);
+
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+
+/* ---------- WHAT ARE YOU GETTING ---------- */
+
+.nails-page .getting-section {
+    border-top: 1px solid var(--nails-line);
+}
+
+.nails-page .getting-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.nails-page .getting-option {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    column-gap: 16px;
+    row-gap: 5px;
+
+    padding: 22px 24px;
+
+    border: 1px solid var(--nails-line);
+
+    color: var(--nails-ink);
+
+    text-decoration: none;
+
+    transition:
+        border-color .2s ease,
+        background .2s ease;
+}
+
+.nails-page .getting-option:hover {
+    border-color: var(--nails-accent);
+    background: var(--nails-soft);
+}
+
+.nails-page .getting-option span {
+    grid-row: 1 / span 2;
+
+    color: var(--nails-accent);
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nails-page .getting-option strong {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.nails-page .getting-option small {
+    color: var(--nails-muted);
+
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.nails-page .nails-footer {
+    border-top: 1px solid var(--nails-line);
+
+    padding: 48px 24px 30px;
+
+    text-align: center;
+}
+
+.nails-page .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    margin-bottom: 22px;
+}
+
+.nails-page .footer-brand strong {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nails-page .footer-brand span {
+    color: #777777;
+
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.nails-page .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+
+    margin-bottom: 26px;
+}
+
+.nails-page .footer-links a {
+    color: var(--nails-ink);
+
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.nails-page .footer-links a:hover {
+    color: var(--nails-accent);
+}
+
+.nails-page .nails-footer > p {
+    margin: 0;
+
+    color: #888888;
+
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+
+    .nails-page .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nails-page .mood-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nails-page .shape-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .nails-page .nails-header {
+        width: calc(100% - 32px);
+        min-height: 72px;
+    }
+
+    .nails-page .nails-brand span {
+        font-size: 10px;
+        letter-spacing: 1.8px;
+    }
+
+    .nails-page .nails-brand small {
+        font-size: 6px;
+        letter-spacing: 1.4px;
+    }
+
+    .nails-page .back-home {
+        font-size: 9px;
+    }
+
+    .nails-page .nails-intro {
+        width: calc(100% - 32px);
+        padding: 72px 0 60px;
+    }
+
+    .nails-page .nails-intro h1 {
+        font-size: 34px;
+        letter-spacing: -1px;
+    }
+
+    .nails-page .nails-section {
+        width: calc(100% - 32px);
+        padding: 64px 0;
+    }
+
+    .nails-page .service-grid,
+    .nails-page .relatable-grid,
+    .nails-page .getting-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nails-page .service-card img {
+        height: 300px;
+    }
+
+    .nails-page .mood-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .nails-page .shape-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nails-page .shape-card:last-child {
+        grid-column: 1 / -1;
+        width: calc(50% - 6px);
+        justify-self: center;
+    }
+
+    .nails-page .getting-option {
+        padding: 20px;
+    }
+}
